@@ -52,7 +52,7 @@ void Session::handle_api(){
     json json_resp;
     http::status status = http::status::ok;
 
-    if(req.target() == "api/status"){
+    if(req.target() == "/api/status"){
         json_resp = {{"status", "online"}, {"secure", true}};
     }else{
         status = http::status::not_found;

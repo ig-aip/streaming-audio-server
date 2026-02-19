@@ -1,0 +1,1134 @@
+Подходящая версия инструмента cmake не найдена (требуется версия 3.31.10).
+Скачивание https://github.com/Kitware/CMake/releases/download/v3.31.10/cmake-3.31.10-windows-x86_64.zip -> cmake-3.31.10-windows-x86_64.zip
+Успешно загружено cmake-3.31.10-windows-x86_64.zip
+Извлечение cmake...
+Подходящая версия инструмента 7zip не найдена (требуется версия 26.0.0).
+Скачивание https://github.com/ip7z/7zip/releases/download/26.00/7z2600.exe -> 7z2600.7z.exe
+Успешно загружено 7z2600.7z.exe
+Извлечение 7zip...
+Подходящая версия инструмента 7zr не найдена (требуется версия 26.0.0).
+Скачивание https://github.com/ip7z/7zip/releases/download/26.00/7zr.exe -> a30f8a21-7zr.exe
+Успешно загружено a30f8a21-7zr.exe
+Обнаружение хэша компилятора для триплета x64-windows...
+Найден компилятор: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/cl.exe
+Будут собраны и установлены следующие пакеты:
+  * boost-algorithm:x64-windows@1.90.0#1
+  * boost-align:x64-windows@1.90.0#1
+  * boost-array:x64-windows@1.90.0#1
+    boost-asio[core,deadline-timer,spawn]:x64-windows@1.90.0#1
+  * boost-assert:x64-windows@1.90.0#1
+    boost-beast:x64-windows@1.90.0#1
+  * boost-bind:x64-windows@1.90.0#1
+  * boost-cmake:x64-windows@1.90.0#1
+  * boost-concept-check:x64-windows@1.90.0#1
+  * boost-config:x64-windows@1.90.0#1
+  * boost-container:x64-windows@1.90.0#1
+  * boost-container-hash:x64-windows@1.90.0#1
+  * boost-context:x64-windows@1.90.0#1
+  * boost-conversion:x64-windows@1.90.0#1
+  * boost-core:x64-windows@1.90.0#1
+  * boost-date-time:x64-windows@1.90.0#1
+  * boost-describe:x64-windows@1.90.0#1
+  * boost-detail:x64-windows@1.90.0#1
+  * boost-endian:x64-windows@1.90.0#1
+  * boost-exception:x64-windows@1.90.0#1
+  * boost-function:x64-windows@1.90.0#1
+  * boost-function-types:x64-windows@1.90.0#1
+  * boost-functional:x64-windows@1.90.0#1
+  * boost-fusion:x64-windows@1.90.0#1
+  * boost-headers:x64-windows@1.90.0#1
+  * boost-integer:x64-windows@1.90.0#1
+  * boost-intrusive:x64-windows@1.90.0#1
+  * boost-io:x64-windows@1.90.0#1
+  * boost-iterator:x64-windows@1.90.0#1
+  * boost-lexical-cast:x64-windows@1.90.0#1
+  * boost-logic:x64-windows@1.90.0#1
+  * boost-move:x64-windows@1.90.0#1
+  * boost-mp11:x64-windows@1.90.0#1
+  * boost-mpl:x64-windows@1.90.0#1
+  * boost-numeric-conversion:x64-windows@1.90.0#1
+  * boost-optional:x64-windows@1.90.0#1
+  * boost-pool:x64-windows@1.90.0#1
+  * boost-predef:x64-windows@1.90.0#1
+  * boost-preprocessor:x64-windows@1.90.0#1
+  * boost-range:x64-windows@1.90.0#1
+  * boost-regex:x64-windows@1.90.0#1
+  * boost-smart-ptr:x64-windows@1.90.0#1
+  * boost-static-assert:x64-windows@1.90.0#1
+  * boost-static-string:x64-windows@1.90.0#1
+  * boost-system:x64-windows@1.90.0#1
+  * boost-throw-exception:x64-windows@1.90.0#1
+  * boost-tokenizer:x64-windows@1.90.0#1
+  * boost-tuple:x64-windows@1.90.0#1
+  * boost-type-index:x64-windows@1.90.0#1
+  * boost-type-traits:x64-windows@1.90.0#1
+  * boost-typeof:x64-windows@1.90.0#1
+  * boost-uninstall:x64-windows@1.90.0#1
+  * boost-unordered:x64-windows@1.90.0#1
+  * boost-utility:x64-windows@1.90.0#1
+    boost-uuid:x64-windows@1.90.0#1
+  * boost-variant2:x64-windows@1.90.0#1
+  * boost-winapi:x64-windows@1.90.0#1
+    gtest:x64-windows@1.17.0#2
+    nlohmann-json:x64-windows@3.12.0#2
+    openssl:x64-windows@3.6.1#2
+  * vcpkg-boost:x64-windows@2025-03-29
+  * vcpkg-cmake:x64-windows@2024-04-23
+  * vcpkg-cmake-config:x64-windows@2024-05-23
+  * vcpkg-cmake-get-vars:x64-windows@2025-05-29
+Дополнительные пакеты (*) будут изменены для завершения этой операции.
+Восстановлено несколько (0) пакетов из C:\Users\igor.babich\AppData\Local\vcpkg\archives за 7.9 ms. Используйте --debug, чтобы увидеть больше деталей.
+Выполняется установка 1/64 vcpkg-cmake-config:x64-windows@2024-05-23…
+Сборка vcpkg-cmake-config:x64-windows@2024-05-23...
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/vcpkg-cmake-config_x64-windows/share/vcpkg-cmake-config/vcpkg_cmake_config_fixup.cmake
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/vcpkg-cmake-config_x64-windows/share/vcpkg-cmake-config/vcpkg-port-config.cmake
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/vcpkg-cmake-config_x64-windows/share/vcpkg-cmake-config/copyright
+-- Пропуск проверки после сборки из-за VCPKG_POLICY_EMPTY_PACKAGE
+Начинается отправка vcpkg-cmake-config:x64-windows@2024-05-23 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку vcpkg-cmake-config:x64-windows: 81.9 ms
+vcpkg-cmake-config:x64-windows ABI пакета: 42e5ea02575a165f5de01be13ac784bf3e861df37615b065018d78b5c9e428de
+Выполняется установка 2/64 vcpkg-cmake:x64-windows@2024-04-23…
+Сборка vcpkg-cmake:x64-windows@2024-04-23...
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/vcpkg-cmake_x64-windows/share/vcpkg-cmake/vcpkg_cmake_configure.cmake
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/vcpkg-cmake_x64-windows/share/vcpkg-cmake/vcpkg_cmake_build.cmake
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/vcpkg-cmake_x64-windows/share/vcpkg-cmake/vcpkg_cmake_install.cmake
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/vcpkg-cmake_x64-windows/share/vcpkg-cmake/vcpkg-port-config.cmake
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/vcpkg-cmake_x64-windows/share/vcpkg-cmake/copyright
+-- Выполнение проверки после сборки
+Начинается отправка vcpkg-cmake:x64-windows@2024-04-23 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку vcpkg-cmake:x64-windows: 89.1 ms
+vcpkg-cmake:x64-windows ABI пакета: 9ea3c39c4861aeff4b4159a94d1113dadaa070fad441125f24fc4f451671b125
+Завершена отправка vcpkg-cmake-config:x64-windows@2024-05-23 в 1 двоичных кэшах в 32.5 ms
+Выполняется установка 3/64 vcpkg-boost:x64-windows@2025-03-29…
+Сборка vcpkg-boost:x64-windows@2025-03-29...
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/vcpkg-boost_x64-windows/share/vcpkg-boost/usage.in
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/vcpkg-boost_x64-windows/share/vcpkg-boost/boost-install.cmake
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/vcpkg-boost_x64-windows/share/vcpkg-boost/vcpkg-port-config.cmake
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/vcpkg-boost_x64-windows/share/vcpkg-boost/copyright
+-- Выполнение проверки после сборки
+Начинается отправка vcpkg-boost:x64-windows@2025-03-29 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку vcpkg-boost:x64-windows: 67 ms
+vcpkg-boost:x64-windows ABI пакета: e8b14db68b969ebbda2e91d2158e560e7b321741d1a2acced43bfe1c3f56babf
+Завершена отправка vcpkg-cmake:x64-windows@2024-04-23 в 1 двоичных кэшах в 36.7 ms
+Выполняется установка 4/64 boost-uninstall:x64-windows@1.90.0#1…
+Сборка boost-uninstall:x64-windows@1.90.0#1...
+-- 
+Please use the following command when you need to remove all boost ports/components:
+    "./vcpkg remove boost-uninstall:x64-windows --recurse"
+
+-- Пропуск проверки после сборки из-за VCPKG_POLICY_EMPTY_PACKAGE
+Начинается отправка boost-uninstall:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-uninstall:x64-windows: 64.2 ms
+boost-uninstall:x64-windows ABI пакета: 488abfb86a281b970006474afd3a99d74922c29329846cf40c77d73b22c18f4d
+Завершена отправка vcpkg-boost:x64-windows@2025-03-29 в 1 двоичных кэшах в 30.8 ms
+Выполняется установка 5/64 boost-cmake:x64-windows@1.90.0#1…
+Сборка boost-cmake:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/cmake/archive/boost-1.90.0.tar.gz -> boostorg-cmake-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-cmake-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-cmake-boost-1.90.0.tar.gz
+-- Applying patch 0001-vcpkg-build.patch
+-- Applying patch 0002-remove-prefix-and-suffix.patch
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-cmake/src/ost-1.90.0-7084b3f473.clean
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Up-to-date: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-cmake_x64-windows/share/boost/cmake-build
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-cmake_x64-windows/share/boost/cmake-build/BoostFetch.cmake
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-cmake_x64-windows/share/boost/cmake-build/BoostInstall.cmake
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-cmake_x64-windows/share/boost/cmake-build/BoostMessage.cmake
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-cmake_x64-windows/share/boost/cmake-build/BoostRoot.cmake
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-cmake_x64-windows/share/boost/cmake-build/BoostTest.cmake
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-cmake_x64-windows/share/boost/cmake-build/BoostTestJamfile.cmake
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-cmake_x64-windows/share/boost-cmake/vcpkg-port-config.cmake
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-cmake_x64-windows/share/boost-cmake/usage
+Downloading https://raw.githubusercontent.com/boostorg/boost/refs/tags/boost-1.90.0/LICENSE_1_0.txt -> boost-1.90.0-LICENSE_1_0.txt
+Successfully downloaded boost-1.90.0-LICENSE_1_0.txt
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-cmake_x64-windows/share/boost-cmake/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-cmake:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-cmake:x64-windows: 4.5 s
+boost-cmake:x64-windows ABI пакета: 9281dfcf3af3622f7df4dc33e73ffaef09fb1ff5d3c32ec395b187b1ce194f6f
+Завершена отправка boost-uninstall:x64-windows@1.90.0#1 в 1 двоичных кэшах в 30.4 ms
+Выполняется установка 6/64 boost-headers:x64-windows@1.90.0#1…
+Сборка boost-headers:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/headers/archive/boost-1.90.0.tar.gz -> boostorg-headers-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-headers-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-headers-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-headers/src/ost-1.90.0-cba82c0a22.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-headers_x64-windows/share/boost-headers/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-headers:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-headers:x64-windows: 2.2 s
+boost-headers:x64-windows ABI пакета: eb08dee9308b0e7b427e8d712056d14dbbd13e57065754478ecc5ac61c398cf5
+Завершена отправка boost-cmake:x64-windows@1.90.0#1 в 1 двоичных кэшах в 42.1 ms
+Выполняется установка 7/64 boost-config:x64-windows@1.90.0#1…
+Сборка boost-config:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/config/archive/boost-1.90.0.tar.gz -> boostorg-config-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-config-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-config-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-config/src/ost-1.90.0-12347e67c4.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-config_x64-windows/share/boost-config/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-config:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-config:x64-windows: 5.1 s
+boost-config:x64-windows ABI пакета: 3412dbcd267274f380e2dd036c745f97e8aac6c10daec105697371e73435a349
+Завершена отправка boost-headers:x64-windows@1.90.0#1 в 1 двоичных кэшах в 36.3 ms
+Выполняется установка 8/64 boost-assert:x64-windows@1.90.0#1…
+Сборка boost-assert:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/assert/archive/boost-1.90.0.tar.gz -> boostorg-assert-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-assert-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-assert-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-assert/src/ost-1.90.0-48c99ab941.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-assert_x64-windows/share/boost-assert/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-assert:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-assert:x64-windows: 2.2 s
+boost-assert:x64-windows ABI пакета: e1c0c1a2dc4ad9584e6e49940a7bd34a81e6ae5d2e1239337d8e490c7b8d870f
+Завершена отправка boost-config:x64-windows@1.90.0#1 в 1 двоичных кэшах в 52.9 ms
+Выполняется установка 9/64 boost-throw-exception:x64-windows@1.90.0#1…
+Сборка boost-throw-exception:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/throw_exception/archive/boost-1.90.0.tar.gz -> boostorg-throw_exception-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-throw_exception-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-throw_exception-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-throw-exception/src/ost-1.90.0-a9b55e045d.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-throw-exception_x64-windows/share/boost-throw-exception/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-throw-exception:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-throw-exception:x64-windows: 2.1 s
+boost-throw-exception:x64-windows ABI пакета: 88ed47160032adcae2c23b0a22f6726a736b5d2793d233f22b5c31c9d36f57b5
+Завершена отправка boost-assert:x64-windows@1.90.0#1 в 1 двоичных кэшах в 34.6 ms
+Выполняется установка 10/64 boost-core:x64-windows@1.90.0#1…
+Сборка boost-core:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/core/archive/boost-1.90.0.tar.gz -> boostorg-core-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-core-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-core-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-core/src/ost-1.90.0-711a16cc0a.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-core_x64-windows/share/boost-core/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-core:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-core:x64-windows: 3.2 s
+boost-core:x64-windows ABI пакета: d4a48db4a8247d030e393ff830dab9b62ab2f4c2bbdf466eced87e5100a58324
+Завершена отправка boost-throw-exception:x64-windows@1.90.0#1 в 1 двоичных кэшах в 36.5 ms
+Выполняется установка 11/64 boost-smart-ptr:x64-windows@1.90.0#1…
+Сборка boost-smart-ptr:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/smart_ptr/archive/boost-1.90.0.tar.gz -> boostorg-smart_ptr-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-smart_ptr-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-smart_ptr-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-smart-ptr/src/ost-1.90.0-ed44268256.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-smart-ptr_x64-windows/share/boost-smart-ptr/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-smart-ptr:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-smart-ptr:x64-windows: 3.5 s
+boost-smart-ptr:x64-windows ABI пакета: 38050428a201db362a054c3763bb20de0b7f1d04c17b100bcb12852ee411e08a
+Завершена отправка boost-core:x64-windows@1.90.0#1 в 1 двоичных кэшах в 42.3 ms
+Выполняется установка 12/64 boost-predef:x64-windows@1.90.0#1…
+Сборка boost-predef:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/predef/archive/boost-1.90.0.tar.gz -> boostorg-predef-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-predef-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-predef-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-predef/src/ost-1.90.0-8a8e3c9b1e.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-predef_x64-windows/share/boost-predef/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-predef:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-predef:x64-windows: 4 s
+boost-predef:x64-windows ABI пакета: 7065958408ff5b1867c1caa20d70bb1b58cfd562e8ad1d04858e5b4d5b3b511d
+Завершена отправка boost-smart-ptr:x64-windows@1.90.0#1 в 1 двоичных кэшах в 40 ms
+Выполняется установка 13/64 boost-winapi:x64-windows@1.90.0#1…
+Сборка boost-winapi:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/winapi/archive/boost-1.90.0.tar.gz -> boostorg-winapi-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-winapi-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-winapi-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-winapi/src/ost-1.90.0-564381c538.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-winapi_x64-windows/share/boost-winapi/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-winapi:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-winapi:x64-windows: 4 s
+boost-winapi:x64-windows ABI пакета: 4acb2b03fecffbe2aa7ebba3b9fd811531f0a22f544ed3396a66e7d1f5fea869
+Завершена отправка boost-predef:x64-windows@1.90.0#1 в 1 двоичных кэшах в 43.4 ms
+Выполняется установка 14/64 boost-static-assert:x64-windows@1.90.0#1…
+Сборка boost-static-assert:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/static_assert/archive/boost-1.90.0.tar.gz -> boostorg-static_assert-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-static_assert-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-static_assert-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-static-assert/src/ost-1.90.0-100358d51d.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-static-assert_x64-windows/share/boost-static-assert/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-static-assert:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-static-assert:x64-windows: 2.2 s
+boost-static-assert:x64-windows ABI пакета: dfdfa0209406ad4f89004f91ab887ffbd3ba5661b85649126f7dc459fd2cd5f8
+Завершена отправка boost-winapi:x64-windows@1.90.0#1 в 1 двоичных кэшах в 58 ms
+Выполняется установка 15/64 boost-type-traits:x64-windows@1.90.0#1…
+Сборка boost-type-traits:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/type_traits/archive/boost-1.90.0.tar.gz -> boostorg-type_traits-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-type_traits-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-type_traits-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-type-traits/src/ost-1.90.0-7486f52674.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-type-traits_x64-windows/share/boost-type-traits/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-type-traits:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-type-traits:x64-windows: 4.8 s
+boost-type-traits:x64-windows ABI пакета: 4f794a5949d43da461187b2112ae3f0b7c47146668cbd5a6d28e7f17cc8dcd9f
+Завершена отправка boost-static-assert:x64-windows@1.90.0#1 в 1 двоичных кэшах в 34.1 ms
+Выполняется установка 16/64 boost-integer:x64-windows@1.90.0#1…
+Сборка boost-integer:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/integer/archive/boost-1.90.0.tar.gz -> boostorg-integer-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-integer-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-integer-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-integer/src/ost-1.90.0-f9cd1d2491.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-integer_x64-windows/share/boost-integer/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-integer:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-integer:x64-windows: 2.4 s
+boost-integer:x64-windows ABI пакета: e7dc722d41c7f50b6971c5c11ddae53407390f0e19058502e76df4544368f9e5
+Завершена отправка boost-type-traits:x64-windows@1.90.0#1 в 1 двоичных кэшах в 49.7 ms
+Выполняется установка 17/64 boost-pool:x64-windows@1.90.0#1…
+Сборка boost-pool:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/pool/archive/boost-1.90.0.tar.gz -> boostorg-pool-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-pool-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-pool-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-pool/src/ost-1.90.0-aa847279a9.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-pool_x64-windows/share/boost-pool/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-pool:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-pool:x64-windows: 5.6 s
+boost-pool:x64-windows ABI пакета: 591170d0e324934d10884ac268fb4043a4aa7e25672d9a196c177ab6ee1fd1f2
+Завершена отправка boost-integer:x64-windows@1.90.0#1 в 1 двоичных кэшах в 37.3 ms
+Выполняется установка 18/64 boost-mp11:x64-windows@1.90.0#1…
+Сборка boost-mp11:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/mp11/archive/boost-1.90.0.tar.gz -> boostorg-mp11-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-mp11-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-mp11-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-mp11/src/ost-1.90.0-544a2037e4.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-mp11_x64-windows/share/boost-mp11/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-mp11:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-mp11:x64-windows: 3 s
+boost-mp11:x64-windows ABI пакета: 9b41729574238296627f64c6a7d3f4f38a17083e6a93b0c1c2ef37ec59b9116e
+Завершена отправка boost-pool:x64-windows@1.90.0#1 в 1 двоичных кэшах в 38.7 ms
+Выполняется установка 19/64 boost-context:x64-windows@1.90.0#1…
+Сборка boost-context:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/context/archive/boost-1.90.0.tar.gz -> boostorg-context-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-context-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-context-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-context/src/ost-1.90.0-839325c354.clean
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-context_x64-windows/share/boost-context/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-context:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-context:x64-windows: 5.3 s
+boost-context:x64-windows ABI пакета: a6f4a67bf1d89fec645ec9b4902088d74275c86b1b3ee1c60bbeb35aaef7bda4
+Завершена отправка boost-mp11:x64-windows@1.90.0#1 в 1 двоичных кэшах в 35.7 ms
+Выполняется установка 20/64 boost-preprocessor:x64-windows@1.90.0#1…
+Сборка boost-preprocessor:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/preprocessor/archive/boost-1.90.0.tar.gz -> boostorg-preprocessor-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-preprocessor-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-preprocessor-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-preprocessor/src/ost-1.90.0-2f2f4ed921.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-preprocessor_x64-windows/share/boost-preprocessor/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-preprocessor:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-preprocessor:x64-windows: 7.2 s
+boost-preprocessor:x64-windows ABI пакета: 7e4377b63268fae60a0550ad6e33866d96764eb5162f44a3ad0d5ac1adb650a3
+Завершена отправка boost-context:x64-windows@1.90.0#1 в 1 двоичных кэшах в 111 ms
+Выполняется установка 21/64 boost-io:x64-windows@1.90.0#1…
+Сборка boost-io:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/io/archive/boost-1.90.0.tar.gz -> boostorg-io-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-io-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-io-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-io/src/ost-1.90.0-7e07208475.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-io_x64-windows/share/boost-io/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-io:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-io:x64-windows: 2.6 s
+boost-io:x64-windows ABI пакета: 6a69e4589e1238b76a351b497ff585a872392a7b451fb8a8a88e1fdb8fbb6d06
+Завершена отправка boost-preprocessor:x64-windows@1.90.0#1 в 1 двоичных кэшах в 134 ms
+Выполняется установка 22/64 boost-utility:x64-windows@1.90.0#1…
+Сборка boost-utility:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/utility/archive/boost-1.90.0.tar.gz -> boostorg-utility-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-utility-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-utility-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-utility/src/ost-1.90.0-ad6b974697.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-utility_x64-windows/share/boost-utility/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-utility:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-utility:x64-windows: 12 s
+boost-utility:x64-windows ABI пакета: 1d8500c21f1475da5a6d28d9174a8598e2001612c35d86cbe42a6c931c2bc073
+Завершена отправка boost-io:x64-windows@1.90.0#1 в 1 двоичных кэшах в 35.8 ms
+Выполняется установка 23/64 boost-optional:x64-windows@1.90.0#1…
+Сборка boost-optional:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/optional/archive/boost-1.90.0.tar.gz -> boostorg-optional-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-optional-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-optional-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-optional/src/ost-1.90.0-a5d7d1c31d.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-optional_x64-windows/share/boost-optional/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-optional:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-optional:x64-windows: 2.6 s
+boost-optional:x64-windows ABI пакета: 07c845adee66443232e90895217da9f094a05d82e011bda96f9c87bb89b0c4ca
+Завершена отправка boost-utility:x64-windows@1.90.0#1 в 1 двоичных кэшах в 38.3 ms
+Выполняется установка 24/64 boost-mpl:x64-windows@1.90.0#1…
+Сборка boost-mpl:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/mpl/archive/boost-1.90.0.tar.gz -> boostorg-mpl-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-mpl-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-mpl-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-mpl/src/ost-1.90.0-c5017d0d4d.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-mpl_x64-windows/share/boost-mpl/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-mpl:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-mpl:x64-windows: 14 s
+boost-mpl:x64-windows ABI пакета: 0700de66a4a567bc4cefe6b06fbbf63f10f0dacc8051a40630e773d950199818
+Завершена отправка boost-optional:x64-windows@1.90.0#1 в 1 двоичных кэшах в 34.8 ms
+Выполняется установка 25/64 boost-typeof:x64-windows@1.90.0#1…
+Сборка boost-typeof:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/typeof/archive/boost-1.90.0.tar.gz -> boostorg-typeof-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-typeof-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-typeof-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-typeof/src/ost-1.90.0-5aac027dc0.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-typeof_x64-windows/share/boost-typeof/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-typeof:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-typeof:x64-windows: 2.5 s
+boost-typeof:x64-windows ABI пакета: bf71c68b8bf6167f2bdbe1b277680e56617922c11fa1018a6b0254cb4cee6581
+Завершена отправка boost-mpl:x64-windows@1.90.0#1 в 1 двоичных кэшах в 126 ms
+Выполняется установка 26/64 boost-tuple:x64-windows@1.90.0#1…
+Сборка boost-tuple:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/tuple/archive/boost-1.90.0.tar.gz -> boostorg-tuple-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-tuple-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-tuple-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-tuple/src/ost-1.90.0-ea34cc3f11.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-tuple_x64-windows/share/boost-tuple/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-tuple:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-tuple:x64-windows: 2.1 s
+boost-tuple:x64-windows ABI пакета: 0fa07fc779f788e04a2287dc3b4590dc604c9d5bec89b5923bf5537720195f7e
+Завершена отправка boost-typeof:x64-windows@1.90.0#1 в 1 двоичных кэшах в 38.2 ms
+Выполняется установка 27/64 boost-detail:x64-windows@1.90.0#1…
+Сборка boost-detail:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/detail/archive/boost-1.90.0.tar.gz -> boostorg-detail-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-detail-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-detail-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-detail/src/ost-1.90.0-d4dd7efec8.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-detail_x64-windows/share/boost-detail/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-detail:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-detail:x64-windows: 2.4 s
+boost-detail:x64-windows ABI пакета: 46dd1c6de1e59b2ffdd2b82b94072482b0ca11052b08a28e521b4b6321ebeb52
+Завершена отправка boost-tuple:x64-windows@1.90.0#1 в 1 двоичных кэшах в 41.9 ms
+Выполняется установка 28/64 boost-function-types:x64-windows@1.90.0#1…
+Сборка boost-function-types:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/function_types/archive/boost-1.90.0.tar.gz -> boostorg-function_types-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-function_types-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-function_types-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-function-types/src/ost-1.90.0-863be242f4.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-function-types_x64-windows/share/boost-function-types/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-function-types:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-function-types:x64-windows: 3.1 s
+boost-function-types:x64-windows ABI пакета: c62d52636eeac18f56e2f1ea8ff82e87ae33c9e6ee4a14ba1c768b57977152c0
+Завершена отправка boost-detail:x64-windows@1.90.0#1 в 1 двоичных кэшах в 37.2 ms
+Выполняется установка 29/64 boost-bind:x64-windows@1.90.0#1…
+Сборка boost-bind:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/bind/archive/boost-1.90.0.tar.gz -> boostorg-bind-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-bind-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-bind-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-bind/src/ost-1.90.0-13d0668dd9.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-bind_x64-windows/share/boost-bind/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-bind:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-bind:x64-windows: 2.4 s
+boost-bind:x64-windows ABI пакета: 3f44fffb72e620e059c895ae7b0eb58612415462990e924c05bf439a05b3a089
+Завершена отправка boost-function-types:x64-windows@1.90.0#1 в 1 двоичных кэшах в 41 ms
+Выполняется установка 30/64 boost-function:x64-windows@1.90.0#1…
+Сборка boost-function:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/function/archive/boost-1.90.0.tar.gz -> boostorg-function-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-function-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-function-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-function/src/ost-1.90.0-fc93f6d122.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-function_x64-windows/share/boost-function/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-function:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-function:x64-windows: 2.4 s
+boost-function:x64-windows ABI пакета: 47edb04b2d0f42b581d4477943b5763a6dfa5506457bb722374a47bb6f52f5f1
+Завершена отправка boost-bind:x64-windows@1.90.0#1 в 1 двоичных кэшах в 34.8 ms
+Выполняется установка 31/64 boost-functional:x64-windows@1.90.0#1…
+Сборка boost-functional:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/functional/archive/boost-1.90.0.tar.gz -> boostorg-functional-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-functional-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-functional-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-functional/src/ost-1.90.0-ee74ea2d91.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-functional_x64-windows/share/boost-functional/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-functional:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-functional:x64-windows: 2.4 s
+boost-functional:x64-windows ABI пакета: acd896866dfe49f16cf17a41f5889542929bbb89ad999d712ff13173d7263a75
+Завершена отправка boost-function:x64-windows@1.90.0#1 в 1 двоичных кэшах в 35.7 ms
+Выполняется установка 32/64 boost-describe:x64-windows@1.90.0#1…
+Сборка boost-describe:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/describe/archive/boost-1.90.0.tar.gz -> boostorg-describe-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-describe-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-describe-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-describe/src/ost-1.90.0-ac379b77b6.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-describe_x64-windows/share/boost-describe/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-describe:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-describe:x64-windows: 2.4 s
+boost-describe:x64-windows ABI пакета: 408204da36c93d68e2fc81ca5fefd64127b33016e2c2672d375a0eedd1c5061a
+Завершена отправка boost-functional:x64-windows@1.90.0#1 в 1 двоичных кэшах в 35.7 ms
+Выполняется установка 33/64 boost-container-hash:x64-windows@1.90.0#1…
+Сборка boost-container-hash:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/container_hash/archive/boost-1.90.0.tar.gz -> boostorg-container_hash-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-container_hash-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-container_hash-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-container-hash/src/ost-1.90.0-ea5929f85f.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-container-hash_x64-windows/share/boost-container-hash/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-container-hash:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-container-hash:x64-windows: 2.6 s
+boost-container-hash:x64-windows ABI пакета: 066540a3ab73ac1c4c905e470ef8507c842c2aebccac3c636bc9940574c74534
+Завершена отправка boost-describe:x64-windows@1.90.0#1 в 1 двоичных кэшах в 38.3 ms
+Выполняется установка 34/64 boost-fusion:x64-windows@1.90.0#1…
+Сборка boost-fusion:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/fusion/archive/boost-1.90.0.tar.gz -> boostorg-fusion-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-fusion-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-fusion-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-fusion/src/ost-1.90.0-36c06e7524.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-fusion_x64-windows/share/boost-fusion/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-fusion:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-fusion:x64-windows: 14 s
+boost-fusion:x64-windows ABI пакета: 4d7a839a16824d01d234db01f9d9001351fef02c294fabed229afe4ff45e83ff
+Завершена отправка boost-container-hash:x64-windows@1.90.0#1 в 1 двоичных кэшах в 38.2 ms
+Выполняется установка 35/64 boost-concept-check:x64-windows@1.90.0#1…
+Сборка boost-concept-check:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/concept_check/archive/boost-1.90.0.tar.gz -> boostorg-concept_check-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-concept_check-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-concept_check-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-concept-check/src/ost-1.90.0-cae984afcf.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-concept-check_x64-windows/share/boost-concept-check/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-concept-check:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-concept-check:x64-windows: 2.3 s
+boost-concept-check:x64-windows ABI пакета: ba5a2dacc9a1c95df2b0b5f8e186f78aa0616fe5aa4a8dceb206890ade82d9ea
+Завершена отправка boost-fusion:x64-windows@1.90.0#1 в 1 двоичных кэшах в 180 ms
+Выполняется установка 36/64 boost-iterator:x64-windows@1.90.0#1…
+Сборка boost-iterator:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/iterator/archive/boost-1.90.0.tar.gz -> boostorg-iterator-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-iterator-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-iterator-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-iterator/src/ost-1.90.0-dd58b06ecd.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-iterator_x64-windows/share/boost-iterator/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-iterator:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-iterator:x64-windows: 2.9 s
+boost-iterator:x64-windows ABI пакета: baa402a738dfb0c2376b86605b27c0f60cf039afeec92216be0caab00a9356c3
+Завершена отправка boost-concept-check:x64-windows@1.90.0#1 в 1 двоичных кэшах в 35.6 ms
+Выполняется установка 37/64 boost-tokenizer:x64-windows@1.90.0#1…
+Сборка boost-tokenizer:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/tokenizer/archive/boost-1.90.0.tar.gz -> boostorg-tokenizer-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-tokenizer-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-tokenizer-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-tokenizer/src/ost-1.90.0-a2fc8935b6.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-tokenizer_x64-windows/share/boost-tokenizer/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-tokenizer:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-tokenizer:x64-windows: 2.2 s
+boost-tokenizer:x64-windows ABI пакета: 497b135aefbe51db69676784d8f25731d258261b6babbca1613d08b30699072a
+Завершена отправка boost-iterator:x64-windows@1.90.0#1 в 1 двоичных кэшах в 36.9 ms
+Выполняется установка 38/64 boost-regex:x64-windows@1.90.0#1…
+Сборка boost-regex:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/regex/archive/boost-1.90.0.tar.gz -> boostorg-regex-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-regex-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-regex-boost-1.90.0.tar.gz
+-- Applying patch compat.diff
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-regex/src/ost-1.90.0-95464e69d3.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-regex_x64-windows/share/boost-regex/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-regex:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-regex:x64-windows: 6.1 s
+boost-regex:x64-windows ABI пакета: 166c0697ded679e9ac3e23c552c813581fb749062dd795516ab30e66f0b562c4
+Завершена отправка boost-tokenizer:x64-windows@1.90.0#1 в 1 двоичных кэшах в 35.8 ms
+Выполняется установка 39/64 boost-conversion:x64-windows@1.90.0#1…
+Сборка boost-conversion:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/conversion/archive/boost-1.90.0.tar.gz -> boostorg-conversion-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-conversion-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-conversion-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-conversion/src/ost-1.90.0-068bb0780f.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-conversion_x64-windows/share/boost-conversion/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-conversion:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-conversion:x64-windows: 2.1 s
+boost-conversion:x64-windows ABI пакета: bae538c281a3e1ea612463fab36fc58cdf4a79d3b4ffcc17d40d302bf64eab9d
+Завершена отправка boost-regex:x64-windows@1.90.0#1 в 1 двоичных кэшах в 47 ms
+Выполняется установка 40/64 boost-array:x64-windows@1.90.0#1…
+Сборка boost-array:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/array/archive/boost-1.90.0.tar.gz -> boostorg-array-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-array-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-array-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-array/src/ost-1.90.0-023a44a736.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-array_x64-windows/share/boost-array/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-array:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-array:x64-windows: 2.2 s
+boost-array:x64-windows ABI пакета: 91689208c68d65584f61c35b69ead1533498555a1ffe38c44ee0ae18cd7fddf9
+Завершена отправка boost-conversion:x64-windows@1.90.0#1 в 1 двоичных кэшах в 38 ms
+Выполняется установка 41/64 boost-range:x64-windows@1.90.0#1…
+Сборка boost-range:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/range/archive/boost-1.90.0.tar.gz -> boostorg-range-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-range-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-range-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-range/src/ost-1.90.0-df3a4ebd7b.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-range_x64-windows/share/boost-range/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-range:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-range:x64-windows: 4 s
+boost-range:x64-windows ABI пакета: dd24d94275a14b9a5fccc754a4ed6254a61790b5c1ea069ef9e2f3dccc77e9e4
+Завершена отправка boost-array:x64-windows@1.90.0#1 в 1 двоичных кэшах в 35.8 ms
+Выполняется установка 42/64 boost-numeric-conversion:x64-windows@1.90.0#1…
+Сборка boost-numeric-conversion:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/numeric_conversion/archive/boost-1.90.0.tar.gz -> boostorg-numeric_conversion-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-numeric_conversion-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-numeric_conversion-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-numeric-conversion/src/ost-1.90.0-e32e09cb8f.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-numeric-conversion_x64-windows/share/boost-numeric-conversion/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-numeric-conversion:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-numeric-conversion:x64-windows: 2.3 s
+boost-numeric-conversion:x64-windows ABI пакета: 9d2aa5cde32c3e4ad73c5a20e9720073ea86a6bae4371b3053e651d9e6edef5a
+Завершена отправка boost-range:x64-windows@1.90.0#1 в 1 двоичных кэшах в 45.2 ms
+Выполняется установка 43/64 boost-move:x64-windows@1.90.0#1…
+Сборка boost-move:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/move/archive/boost-1.90.0.tar.gz -> boostorg-move-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-move-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-move-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-move/src/ost-1.90.0-0b8fc9ef7a.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-move_x64-windows/share/boost-move/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-move:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-move:x64-windows: 2.6 s
+boost-move:x64-windows ABI пакета: 18be4f60ef0943f6e5d506685d7def1c9afaa122ce357f8ec150e25577937b34
+Завершена отправка boost-numeric-conversion:x64-windows@1.90.0#1 в 1 двоичных кэшах в 37.4 ms
+Выполняется установка 44/64 boost-intrusive:x64-windows@1.90.0#1…
+Сборка boost-intrusive:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/intrusive/archive/boost-1.90.0.tar.gz -> boostorg-intrusive-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-intrusive-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-intrusive-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-intrusive/src/ost-1.90.0-3e4b015c82.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-intrusive_x64-windows/share/boost-intrusive/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-intrusive:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-intrusive:x64-windows: 3.5 s
+boost-intrusive:x64-windows ABI пакета: eb3c886fea8ecd32d3e48cd9d4f77c5895a7f577c633c22b7970c019e13540eb
+Завершена отправка boost-move:x64-windows@1.90.0#1 в 1 двоичных кэшах в 37.8 ms
+Выполняется установка 45/64 boost-container:x64-windows@1.90.0#1…
+Сборка boost-container:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/container/archive/boost-1.90.0.tar.gz -> boostorg-container-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-container-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-container-boost-1.90.0.tar.gz
+-- Applying patch posix-threads.diff
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-container/src/ost-1.90.0-ebbe259cd5.clean
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-container_x64-windows/share/boost-container/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-container:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-container:x64-windows: 5.6 s
+boost-container:x64-windows ABI пакета: 99d80d143911b5895b05c1fcc3b80ce2f97874676eb07250c8bd018bf31f6909
+Завершена отправка boost-intrusive:x64-windows@1.90.0#1 в 1 двоичных кэшах в 58.4 ms
+Выполняется установка 46/64 boost-lexical-cast:x64-windows@1.90.0#1…
+Сборка boost-lexical-cast:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/lexical_cast/archive/boost-1.90.0.tar.gz -> boostorg-lexical_cast-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-lexical_cast-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-lexical_cast-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-lexical-cast/src/ost-1.90.0-c44665342f.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-lexical-cast_x64-windows/share/boost-lexical-cast/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-lexical-cast:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-lexical-cast:x64-windows: 2.3 s
+boost-lexical-cast:x64-windows ABI пакета: 47f9e93af8875c98815103a9ea5a9be6be7cec7174a0632a547c2f656279e6e9
+Завершена отправка boost-container:x64-windows@1.90.0#1 в 1 двоичных кэшах в 149 ms
+Выполняется установка 47/64 boost-unordered:x64-windows@1.90.0#1…
+Сборка boost-unordered:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/unordered/archive/boost-1.90.0.tar.gz -> boostorg-unordered-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-unordered-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-unordered-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-unordered/src/ost-1.90.0-0a90434307.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-unordered_x64-windows/share/boost-unordered/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-unordered:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-unordered:x64-windows: 8 s
+boost-unordered:x64-windows ABI пакета: dad6f3731e0ce95e1b534dae29c69ac4623554a743081163d33abc26a93aaeb1
+Завершена отправка boost-lexical-cast:x64-windows@1.90.0#1 в 1 двоичных кэшах в 36.6 ms
+Выполняется установка 48/64 boost-exception:x64-windows@1.90.0#1…
+Сборка boost-exception:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/exception/archive/boost-1.90.0.tar.gz -> boostorg-exception-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-exception-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-exception-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-exception/src/ost-1.90.0-e3bd92ec37.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-exception_x64-windows/share/boost-exception/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-exception:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-exception:x64-windows: 2.5 s
+boost-exception:x64-windows ABI пакета: 9e3d4f864493ec43428674eee96066070609162c997688126aa5eb69d63442e4
+Завершена отправка boost-unordered:x64-windows@1.90.0#1 в 1 двоичных кэшах в 43.7 ms
+Выполняется установка 49/64 boost-algorithm:x64-windows@1.90.0#1…
+Сборка boost-algorithm:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/algorithm/archive/boost-1.90.0.tar.gz -> boostorg-algorithm-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-algorithm-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-algorithm-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-algorithm/src/ost-1.90.0-b7cd715cba.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-algorithm_x64-windows/share/boost-algorithm/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-algorithm:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-algorithm:x64-windows: 3.5 s
+boost-algorithm:x64-windows ABI пакета: 9678f095e7fff96d12091fcefa61855a06bc6187651eb0adcb84673b9b99b684
+Завершена отправка boost-exception:x64-windows@1.90.0#1 в 1 двоичных кэшах в 38.7 ms
+Выполняется установка 50/64 boost-date-time:x64-windows@1.90.0#1…
+Сборка boost-date-time:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/date_time/archive/boost-1.90.0.tar.gz -> boostorg-date_time-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-date_time-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-date_time-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-date-time/src/ost-1.90.0-3c85e5b301.clean
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-date-time_x64-windows/share/boost-date-time/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-date-time:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-date-time:x64-windows: 4.4 s
+boost-date-time:x64-windows ABI пакета: 0c87706823b93df3e102832f1d037eb713242297c920ef55ccb81e111ae0ed3a
+Завершена отправка boost-algorithm:x64-windows@1.90.0#1 в 1 двоичных кэшах в 40 ms
+Выполняется установка 51/64 boost-variant2:x64-windows@1.90.0#1…
+Сборка boost-variant2:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/variant2/archive/boost-1.90.0.tar.gz -> boostorg-variant2-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-variant2-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-variant2-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-variant2/src/ost-1.90.0-976890056e.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-variant2_x64-windows/share/boost-variant2/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-variant2:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-variant2:x64-windows: 2.1 s
+boost-variant2:x64-windows ABI пакета: 91112626ada549be4624d7ad35764878ec1e2938d8c17244c92ae73cdc337b14
+Завершена отправка boost-date-time:x64-windows@1.90.0#1 в 1 двоичных кэшах в 88.4 ms
+Выполняется установка 52/64 boost-system:x64-windows@1.90.0#1…
+Сборка boost-system:x64-windows@1.90.0#1...
+CMake Warning at scripts/cmake/vcpkg_buildpath_length_warning.cmake:4 (message):
+  boost-system's buildsystem uses very long paths and may fail on your
+  system.
+
+  We recommend moving vcpkg to a short path such as 'C:\src\vcpkg' or using
+  the subst command.
+Call Stack (most recent call first):
+  ports/boost-system/portfile.cmake:3 (vcpkg_buildpath_length_warning)
+  scripts/ports.cmake:206 (include)
+
+
+Downloading https://github.com/boostorg/system/archive/boost-1.90.0.tar.gz -> boostorg-system-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-system-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-system-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-system/src/ost-1.90.0-c8c000e811.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-system_x64-windows/share/boost-system/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-system:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-system:x64-windows: 2.5 s
+boost-system:x64-windows ABI пакета: 7e240488945496944fd060b8f4492027bf85c4209ab0d179aa63b611791b0468
+Завершена отправка boost-variant2:x64-windows@1.90.0#1 в 1 двоичных кэшах в 37.4 ms
+Выполняется установка 53/64 boost-align:x64-windows@1.90.0#1…
+Сборка boost-align:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/align/archive/boost-1.90.0.tar.gz -> boostorg-align-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-align-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-align-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-align/src/ost-1.90.0-c0f7e0a723.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-align_x64-windows/share/boost-align/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-align:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-align:x64-windows: 2.4 s
+boost-align:x64-windows ABI пакета: 216b24aca8fc475bc69fdb237f84ff00bd09803ff293e9e81c12b6e789e497b4
+Завершена отправка boost-system:x64-windows@1.90.0#1 в 1 двоичных кэшах в 36.1 ms
+Выполняется установка 54/64 boost-asio[core,deadline-timer,spawn]:x64-windows@1.90.0#1…
+Сборка boost-asio[core,deadline-timer,spawn]:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/asio/archive/boost-1.90.0.tar.gz -> boostorg-asio-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-asio-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-asio-boost-1.90.0.tar.gz
+-- Applying patch 0001-add-options.patch
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-asio/src/ost-1.90.0-e2c2359ce3.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-asio_x64-windows/share/boost-asio/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-asio[core,deadline-timer,spawn]:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-asio:x64-windows: 9.7 s
+boost-asio:x64-windows ABI пакета: 67c865cde2f893583f8fc887e0f750967044faa84cb03be184924d315c343571
+Завершена отправка boost-align:x64-windows@1.90.0#1 в 1 двоичных кэшах в 38.5 ms
+Выполняется установка 55/64 boost-type-index:x64-windows@1.90.0#1…
+Сборка boost-type-index:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/type_index/archive/boost-1.90.0.tar.gz -> boostorg-type_index-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-type_index-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-type_index-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-type-index/src/ost-1.90.0-3a11281bf8.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-type-index_x64-windows/share/boost-type-index/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-type-index:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-type-index:x64-windows: 2.3 s
+boost-type-index:x64-windows ABI пакета: 19a91398bbc0fa5385b56e3b93db0c36a7c9bc7acee86f9f492d2bf6acfc0381
+Завершена отправка boost-asio[core,deadline-timer,spawn]:x64-windows@1.90.0#1 в 1 двоичных кэшах в 109 ms
+Выполняется установка 56/64 boost-static-string:x64-windows@1.90.0#1…
+Сборка boost-static-string:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/static_string/archive/boost-1.90.0.tar.gz -> boostorg-static_string-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-static_string-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-static_string-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-static-string/src/ost-1.90.0-ab4d190c4f.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-static-string_x64-windows/share/boost-static-string/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-static-string:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-static-string:x64-windows: 2.3 s
+boost-static-string:x64-windows ABI пакета: 84103a5f4b3d63476dcaa0adab176e9da8554b2b9218ea244835a2d2b3b7be76
+Завершена отправка boost-type-index:x64-windows@1.90.0#1 в 1 двоичных кэшах в 35 ms
+Выполняется установка 57/64 boost-logic:x64-windows@1.90.0#1…
+Сборка boost-logic:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/logic/archive/boost-1.90.0.tar.gz -> boostorg-logic-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-logic-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-logic-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-logic/src/ost-1.90.0-0b1e434cf7.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-logic_x64-windows/share/boost-logic/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-logic:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-logic:x64-windows: 2.2 s
+boost-logic:x64-windows ABI пакета: af32c9b4d3b6cde752b23ca4e7b7980933865af950251feefa8f9b6b5ca5758e
+Завершена отправка boost-static-string:x64-windows@1.90.0#1 в 1 двоичных кэшах в 45.8 ms
+Выполняется установка 58/64 boost-endian:x64-windows@1.90.0#1…
+Сборка boost-endian:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/endian/archive/boost-1.90.0.tar.gz -> boostorg-endian-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-endian-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-endian-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-endian/src/ost-1.90.0-ca22f680df.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-endian_x64-windows/share/boost-endian/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-endian:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-endian:x64-windows: 2.2 s
+boost-endian:x64-windows ABI пакета: a5903373892df6e7918b43cae6968c093db98b60211dcbd773932675f4b8d966
+Завершена отправка boost-logic:x64-windows@1.90.0#1 в 1 двоичных кэшах в 36.9 ms
+Выполняется установка 59/64 boost-beast:x64-windows@1.90.0#1…
+Сборка boost-beast:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/beast/archive/boost-1.90.0.tar.gz -> boostorg-beast-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-beast-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-beast-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-beast/src/ost-1.90.0-8e91329952.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-beast_x64-windows/share/boost-beast/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-beast:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-beast:x64-windows: 6.2 s
+boost-beast:x64-windows ABI пакета: f431f7f1aca9398d0351fb33e7cdc701b7a0d0cafc56dd26a1215f9fe951287e
+Завершена отправка boost-endian:x64-windows@1.90.0#1 в 1 двоичных кэшах в 36.1 ms
+Выполняется установка 60/64 boost-uuid:x64-windows@1.90.0#1…
+Сборка boost-uuid:x64-windows@1.90.0#1...
+Downloading https://github.com/boostorg/uuid/archive/boost-1.90.0.tar.gz -> boostorg-uuid-boost-1.90.0.tar.gz
+Successfully downloaded boostorg-uuid-boost-1.90.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/boostorg-uuid-boost-1.90.0.tar.gz
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/boost-uuid/src/ost-1.90.0-6a985bdd78.clean
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/boost-uuid_x64-windows/share/boost-uuid/copyright
+-- Выполнение проверки после сборки
+Начинается отправка boost-uuid:x64-windows@1.90.0#1 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку boost-uuid:x64-windows: 2.5 s
+boost-uuid:x64-windows ABI пакета: ba5404b417d4c0761047fb8769f9f3dc76b29cae6cce1aff79d37420e5308fad
+Завершена отправка boost-beast:x64-windows@1.90.0#1 в 1 двоичных кэшах в 62.5 ms
+Выполняется установка 61/64 gtest:x64-windows@1.17.0#2…
+Сборка gtest:x64-windows@1.17.0#2...
+Downloading https://github.com/google/googletest/archive/v1.17.0.tar.gz -> google-googletest-v1.17.0.tar.gz
+Successfully downloaded google-googletest-v1.17.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/google-googletest-v1.17.0.tar.gz
+-- Applying patch 001-fix-UWP-death-test.patch
+-- Applying patch clang-tidy-no-lint.patch
+-- Applying patch fix-main-lib-path.patch
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/gtest/src/v1.17.0-0c449efaff.clean
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/gtest_x64-windows/src/gtest.cc
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/gtest_x64-windows/src/gtest_main.cc
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/gtest_x64-windows/src/gtest-all.cc
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/gtest_x64-windows/src/gtest-assertion-result.cc
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/gtest_x64-windows/src/gtest-death-test.cc
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/gtest_x64-windows/src/gtest-filepath.cc
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/gtest_x64-windows/src/gtest-internal-inl.h
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/gtest_x64-windows/src/gtest-matchers.cc
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/gtest_x64-windows/src/gtest-port.cc
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/gtest_x64-windows/src/gtest-printers.cc
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/gtest_x64-windows/src/gtest-test-part.cc
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/gtest_x64-windows/src/gtest-typed-test.cc
+-- Fixing pkgconfig file: C:/Users/igor.babich/vcpkg/vcpkg/packages/gtest_x64-windows/lib/pkgconfig/gmock.pc
+-- Fixing pkgconfig file: C:/Users/igor.babich/vcpkg/vcpkg/packages/gtest_x64-windows/lib/pkgconfig/gmock_main.pc
+-- Fixing pkgconfig file: C:/Users/igor.babich/vcpkg/vcpkg/packages/gtest_x64-windows/lib/pkgconfig/gtest.pc
+-- Fixing pkgconfig file: C:/Users/igor.babich/vcpkg/vcpkg/packages/gtest_x64-windows/lib/pkgconfig/gtest_main.pc
+Downloading msys2-mingw-w64-x86_64-pkgconf-1~2.5.1-1-any.pkg.tar.zst, trying https://mirror.msys2.org/mingw/mingw64/mingw-w64-x86_64-pkgconf-1~2.5.1-1-any.pkg.tar.zst
+Successfully downloaded msys2-mingw-w64-x86_64-pkgconf-1~2.5.1-1-any.pkg.tar.zst
+Downloading msys2-msys2-runtime-3.6.5-1-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/msys2-runtime-3.6.5-1-x86_64.pkg.tar.zst
+Successfully downloaded msys2-msys2-runtime-3.6.5-1-x86_64.pkg.tar.zst
+-- Using msys root at C:/Users/igor.babich/vcpkg/vcpkg/downloads/tools/msys2/3e71d1f8e22ab23f
+-- Fixing pkgconfig file: C:/Users/igor.babich/vcpkg/vcpkg/packages/gtest_x64-windows/debug/lib/pkgconfig/gmock.pc
+-- Fixing pkgconfig file: C:/Users/igor.babich/vcpkg/vcpkg/packages/gtest_x64-windows/debug/lib/pkgconfig/gmock_main.pc
+-- Fixing pkgconfig file: C:/Users/igor.babich/vcpkg/vcpkg/packages/gtest_x64-windows/debug/lib/pkgconfig/gtest.pc
+-- Fixing pkgconfig file: C:/Users/igor.babich/vcpkg/vcpkg/packages/gtest_x64-windows/debug/lib/pkgconfig/gtest_main.pc
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/gtest_x64-windows/share/gtest/copyright
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/gtest_x64-windows/share/gtest/usage
+-- Выполнение проверки после сборки
+Начинается отправка gtest:x64-windows@1.17.0#2 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку gtest:x64-windows: 16 s
+gtest:x64-windows ABI пакета: d47bf408c6461d38e25a840823a1344167b863ea95b962c2d9e036c29d1a49e8
+Завершена отправка boost-uuid:x64-windows@1.90.0#1 в 1 двоичных кэшах в 37.1 ms
+Выполняется установка 62/64 nlohmann-json:x64-windows@3.12.0#2…
+Сборка nlohmann-json:x64-windows@3.12.0#2...
+Downloading https://github.com/nlohmann/json/archive/v3.12.0.tar.gz -> nlohmann-json-v3.12.0.tar.gz
+Successfully downloaded nlohmann-json-v3.12.0.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/nlohmann-json-v3.12.0.tar.gz
+-- Applying patch fix-4736_char8_t.patch
+-- Applying patch fix-4742_std_optional.patch
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/nlohmann-json/src/v3.12.0-89fed620e6.clean
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Fixing pkgconfig file: C:/Users/igor.babich/vcpkg/vcpkg/packages/nlohmann-json_x64-windows/share/pkgconfig/nlohmann_json.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.5.1-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.5-1-x86_64.pkg.tar.zst
+-- Using msys root at C:/Users/igor.babich/vcpkg/vcpkg/downloads/tools/msys2/3e71d1f8e22ab23f
+-- Fixing pkgconfig file: C:/Users/igor.babich/vcpkg/vcpkg/packages/nlohmann-json_x64-windows/debug/share/pkgconfig/nlohmann_json.pc
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/nlohmann-json_x64-windows/share/nlohmann-json/copyright
+-- Выполнение проверки после сборки
+Начинается отправка nlohmann-json:x64-windows@3.12.0#2 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку nlohmann-json:x64-windows: 4.8 s
+nlohmann-json:x64-windows ABI пакета: 632a52150037dd0fb542a1fe1e8ff4827537c175613cb21ea0b565e7c25c920b
+Завершена отправка gtest:x64-windows@1.17.0#2 в 1 двоичных кэшах в 980 ms
+Выполняется установка 63/64 vcpkg-cmake-get-vars:x64-windows@2025-05-29…
+Сборка vcpkg-cmake-get-vars:x64-windows@2025-05-29...
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/vcpkg-cmake-get-vars_x64-windows/share/vcpkg-cmake-get-vars/vcpkg_cmake_get_vars.cmake
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/vcpkg-cmake-get-vars_x64-windows/share/vcpkg-cmake-get-vars/cmake_get_vars
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/vcpkg-cmake-get-vars_x64-windows/share/vcpkg-cmake-get-vars/cmake_get_vars/CMakeLists.txt
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/vcpkg-cmake-get-vars_x64-windows/share/vcpkg-cmake-get-vars/cmake-get-vars.cmake.in
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/vcpkg-cmake-get-vars_x64-windows/share/vcpkg-cmake-get-vars/vcpkg-port-config.cmake
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/vcpkg-cmake-get-vars_x64-windows/share/vcpkg-cmake-get-vars/copyright
+-- Выполнение проверки после сборки
+Начинается отправка vcpkg-cmake-get-vars:x64-windows@2025-05-29 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку vcpkg-cmake-get-vars:x64-windows: 111 ms
+vcpkg-cmake-get-vars:x64-windows ABI пакета: b3d550e6a249f07fbf87016259770ea5c9363e8967c7fb505e797c20890f9698
+Завершена отправка nlohmann-json:x64-windows@3.12.0#2 в 1 двоичных кэшах в 52 ms
+Выполняется установка 64/64 openssl:x64-windows@3.6.1#2…
+Сборка openssl:x64-windows@3.6.1#2...
+Downloading https://github.com/openssl/openssl/archive/openssl-3.6.1.tar.gz -> openssl-openssl-openssl-3.6.1.tar.gz
+Successfully downloaded openssl-openssl-openssl-3.6.1.tar.gz
+-- Extracting source C:/Users/igor.babich/vcpkg/vcpkg/downloads/openssl-openssl-openssl-3.6.1.tar.gz
+-- Applying patch cmake-config.patch
+-- Applying patch command-line-length.patch
+-- Applying patch script-prefix.patch
+-- Applying patch windows/install-layout.patch
+-- Applying patch windows/install-pdbs.patch
+-- Applying patch windows/install-programs.diff
+-- Applying patch unix/android-cc.patch
+-- Applying patch unix/move-openssldir.patch
+-- Applying patch unix/no-empty-dirs.patch
+-- Applying patch unix/no-static-libs-for-shared.patch
+-- Applying patch fix-mingw-build.patch
+-- Using source at C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/openssl/src/nssl-3.6.1-c0028aa207.clean
+-- Getting CMake variables for x64-windows
+-- Loading CMake variables from C:/Users/igor.babich/vcpkg/vcpkg/buildtrees/openssl/cmake-get-vars_C_CXX-x64-windows.cmake.log
+Downloading https://github.com/StrawberryPerl/Perl-Dist-Strawberry/releases/download/SP_54201_64bit/strawberry-perl-5.42.0.1-64bit-portable.zip -> strawberry-perl-5.42.0.1-64bit-portable.zip
+Successfully downloaded strawberry-perl-5.42.0.1-64bit-portable.zip
+Downloading nasm-3.01-win64.zip, trying https://www.nasm.us/pub/nasm/releasebuilds/3.01/win64/nasm-3.01-win64.zip
+Successfully downloaded nasm-3.01-win64.zip
+-- Getting CMake variables for x64-windows
+Downloading jom_1_1_6.zip, trying https://download.qt.io/official_releases/jom/jom_1_1_6.zip
+warning: Download https://download.qt.io/official_releases/jom/jom_1_1_6.zip failed -- retrying after 1000ms
+warning: Download https://download.qt.io/official_releases/jom/jom_1_1_6.zip failed -- retrying after 2000ms
+warning: Download https://download.qt.io/official_releases/jom/jom_1_1_6.zip failed -- retrying after 4000ms
+Trying https://mirrors.ocf.berkeley.edu/qt/official_releases/jom/jom_1_1_6.zip
+Successfully downloaded jom_1_1_6.zip
+-- Prerunning x64-windows-dbg
+-- Building x64-windows-dbg
+-- Prerunning x64-windows-rel
+-- Building x64-windows-rel
+-- Fixing pkgconfig file: C:/Users/igor.babich/vcpkg/vcpkg/packages/openssl_x64-windows/lib/pkgconfig/libcrypto.pc
+-- Fixing pkgconfig file: C:/Users/igor.babich/vcpkg/vcpkg/packages/openssl_x64-windows/lib/pkgconfig/libssl.pc
+-- Fixing pkgconfig file: C:/Users/igor.babich/vcpkg/vcpkg/packages/openssl_x64-windows/lib/pkgconfig/openssl.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.5.1-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.5-1-x86_64.pkg.tar.zst
+-- Using msys root at C:/Users/igor.babich/vcpkg/vcpkg/downloads/tools/msys2/3e71d1f8e22ab23f
+-- Fixing pkgconfig file: C:/Users/igor.babich/vcpkg/vcpkg/packages/openssl_x64-windows/debug/lib/pkgconfig/libcrypto.pc
+-- Fixing pkgconfig file: C:/Users/igor.babich/vcpkg/vcpkg/packages/openssl_x64-windows/debug/lib/pkgconfig/libssl.pc
+-- Fixing pkgconfig file: C:/Users/igor.babich/vcpkg/vcpkg/packages/openssl_x64-windows/debug/lib/pkgconfig/openssl.pc
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/openssl_x64-windows/share/openssl/usage
+-- Installing: C:/Users/igor.babich/vcpkg/vcpkg/packages/openssl_x64-windows/share/openssl/copyright
+-- Выполнение проверки после сборки
+Начинается отправка openssl:x64-windows@3.6.1#2 в 1 двоичных кэшах в фоновом режиме
+Затраченное время на обработку openssl:x64-windows: 7 min
+openssl:x64-windows ABI пакета: 97b825c7de4f2e7180934d874866312ad6001c8f378bed1eda6acbb8e78b55a5
+Установленные содержимое предоставляется вам по лицензии владельцами этого содержимого. Корпорация Майкрософт не несет ответственности за пакеты сторонних производителей и не предоставляет лицензии на такие пакеты.
+В пакетах, установленных в этой установке vcpkg, объявлены следующие лицензии:
+Apache-2.0
+BSD-3-Clause
+BSL-1.0
+MIT
+The package boost-asio is compatible with built-in CMake targets of FindBoost.cmake:
+
+    find_package(Boost REQUIRED COMPONENTS asio)
+    target_link_libraries(main PRIVATE Boost::asio)
+
+or the generated cmake configs via:
+
+    find_package( REQUIRED CONFIG)
+    target_link_libraries(main PRIVATE Boost::asio)
+
+The package boost-beast is compatible with built-in CMake targets of FindBoost.cmake:
+
+    find_package(Boost REQUIRED COMPONENTS beast)
+    target_link_libraries(main PRIVATE Boost::beast)
+
+or the generated cmake configs via:
+
+    find_package( REQUIRED CONFIG)
+    target_link_libraries(main PRIVATE Boost::beast)
+
+The package boost-uuid is compatible with built-in CMake targets of FindBoost.cmake:
+
+    find_package(Boost REQUIRED COMPONENTS uuid)
+    target_link_libraries(main PRIVATE Boost::uuid)
+
+or the generated cmake configs via:
+
+    find_package( REQUIRED CONFIG)
+    target_link_libraries(main PRIVATE Boost::uuid)
+
+The package gtest is compatible with built-in CMake targets:
+
+    enable_testing()
+    
+    find_package(GTest CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE GTest::gtest GTest::gtest_main GTest::gmock GTest::gmock_main)
+    
+    add_test(AllTestsInMain main)
+
+The package nlohmann-json provides CMake targets:
+
+    find_package(nlohmann_json CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE nlohmann_json::nlohmann_json)
+
+The package nlohmann-json can be configured to not provide implicit conversions via a custom triplet file:
+
+    set(nlohmann-json_IMPLICIT_CONVERSIONS OFF)
+
+For more information, see the docs here:
+    
+    https://json.nlohmann.me/api/macros/json_use_implicit_conversions/
+
+openssl is compatible with built-in CMake targets:
+
+  find_package(OpenSSL REQUIRED)
+  target_link_libraries(main PRIVATE OpenSSL::SSL)
+  target_link_libraries(main PRIVATE OpenSSL::Crypto)
+
+Завершена отправка vcpkg-cmake-get-vars:x64-windows@2025-05-29 в 1 двоичных кэшах в 29.9 ms
+Ожидание 1 отправки двоичного кэша...
+Завершена отправка openssl:x64-windows@3.6.1#2 в 1 двоичных кэшах в 1.9 s (1/1)
+Все запрошенные установки успешно завершены за: 11 min

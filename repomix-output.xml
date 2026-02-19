@@ -1,0 +1,617 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+.vs/CMake Overview
+.vs/ProjectSettings.json
+.vs/slnx.sqlite
+.vs/streaming-audio-server/FileContentIndex/f6bcbccf-afc0-4bb1-b223-bf71c3f654b9.vsidx
+.vs/streaming-audio-server/v17/.wsuo
+.vs/streaming-audio-server/v17/Browse.VC.db
+.vs/streaming-audio-server/v17/Browse.VC.db-shm
+.vs/streaming-audio-server/v17/Browse.VC.db-wal
+.vs/streaming-audio-server/v17/Browse.VC.opendb
+.vs/streaming-audio-server/v17/DocumentLayout.backup.json
+.vs/streaming-audio-server/v17/DocumentLayout.json
+.vs/streaming-audio-server/v17/ipch/AutoPCH/4744bd0e1d657af1/SERVER.ipch
+.vs/streaming-audio-server/v17/ipch/AutoPCH/b831a975dc5c5424/SESSION.ipch
+.vs/VSWorkspaceState.json
+CMakeLists.txt
+CMakeSettings.json
+main.cpp
+net.h
+server.cpp
+server.h
+session.cpp
+session.h
+vcpkg.json
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path=".vs/CMake Overview">
+
+</file>
+
+<file path=".vs/ProjectSettings.json">
+{
+  "CurrentProjectSetting": "x64-Debug"
+}
+</file>
+
+<file path=".vs/streaming-audio-server/v17/DocumentLayout.backup.json">
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\igor.babich\\streaming-audio-server\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igor.babich\\streaming-audio-server\\CMakeSettings.json||{10608CD5-279C-4A28-BD5F-BA2CFCE06219}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CMakeSettings.json||{10608CD5-279C-4A28-BD5F-BA2CFCE06219}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CMakeSettings.json",
+              "DocumentMoniker": "C:\\Users\\igor.babich\\streaming-audio-server\\CMakeSettings.json",
+              "RelativeDocumentMoniker": "CMakeSettings.json",
+              "ToolTip": "C:\\Users\\igor.babich\\streaming-audio-server\\CMakeSettings.json",
+              "RelativeToolTip": "CMakeSettings.json",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-19T11:24:54.213Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+</file>
+
+<file path=".vs/streaming-audio-server/v17/DocumentLayout.json">
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\igor.babich\\streaming-audio-server\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igor.babich\\streaming-audio-server\\CMakeSettings.json||{10608CD5-279C-4A28-BD5F-BA2CFCE06219}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CMakeSettings.json||{10608CD5-279C-4A28-BD5F-BA2CFCE06219}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CMakeSettings.json",
+              "DocumentMoniker": "C:\\Users\\igor.babich\\streaming-audio-server\\CMakeSettings.json",
+              "RelativeDocumentMoniker": "CMakeSettings.json",
+              "ToolTip": "C:\\Users\\igor.babich\\streaming-audio-server\\CMakeSettings.json",
+              "RelativeToolTip": "CMakeSettings.json",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-19T11:24:54.213Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+</file>
+
+<file path=".vs/VSWorkspaceState.json">
+{
+  "OutputFoldersPerTargetSystem": {
+    "Local Machine": [
+      "out\\build\\x64-Debug",
+      "out\\install\\x64-Debug"
+    ]
+  }
+}
+</file>
+
+<file path="CMakeSettings.json">
+{
+    "configurations": [
+      {
+        "name": "x64-Debug",
+        "generator": "Ninja",
+        "configurationType": "Debug",
+        "inheritEnvironments": [ "msvc_x64_x64" ],
+        "buildRoot": "${projectDir}\\out\\build\\${name}",
+        "installRoot": "${projectDir}\\out\\install\\${name}",
+        "cmakeCommandArgs": "",
+        "buildCommandArgs": "",
+        "ctestCommandArgs": "",
+        "cmakeToolchain": "C:\\Users\\igor.babich\\vcpkg\\vcpkg\\scripts\\buildsystems\\vcpkg.cmake"
+      }
+    ]
+}
+</file>
+
+<file path="CMakeLists.txt">
+cmake_minimum_required(VERSION 3.16)
+
+project(file-manager-server-webRtcp LANGUAGES CXX)
+
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+find_package(Boost REQUIRED)
+find_package(GTest REQUIRED)
+find_package(OpenSSL REQUIRED)
+find_package(nlohmann_json REQUIRED CONFIG)
+
+add_library(file-manager-server-lib
+  server.h server.cpp
+  net.h
+  session.h session.cpp
+)
+target_link_libraries(file-manager-server-lib PUBLIC Boost::boost OpenSSL::SSL nlohmann_json::nlohmann_json)
+
+
+add_executable(file-manager-server-p2p
+  main.cpp
+)
+target_link_libraries(file-manager-server-p2p file-manager-server-lib)
+</file>
+
+<file path="main.cpp">
+#include "server.h"
+
+int main(int argc, char *argv[])
+{
+    auto server = std::make_shared<Server>();
+    server->start();
+}
+</file>
+
+<file path="net.h">
+#ifndef NET_H
+#define NET_H
+#include "boost/beast.hpp"
+#include "boost/asio.hpp"
+#include "boost/uuid.hpp"
+#include "boost/asio/ssl.hpp"
+#include "boost/beast/ssl/ssl_stream.hpp"
+#include <nlohmann/json.hpp>
+#include <iostream>
+
+
+using json = nlohmann::json;
+namespace asio = boost::asio;
+namespace beast = boost::beast;
+namespace ip = asio::ip;
+namespace http = beast::http;
+namespace ssl = asio::ssl;
+using uuid = boost::uuids::uuid;
+using tcp = boost::asio::ip::tcp;
+
+const std::string IP = "127.0.0.1";
+const int PORT = 55555;
+
+
+#endif // NET_H
+</file>
+
+<file path="server.cpp">
+#include "Server.h"
+#include "algorithm"
+
+
+Server::Server()  :
+    ioc(),
+    acceptor(ioc),
+    ctx(ssl::context::tls_server)
+{
+    boost::system::error_code er;
+    acceptor.open(ip::tcp::endpoint{ip::make_address_v4(IP), PORT}.protocol(), er);
+
+    if(er){
+        throw std::runtime_error("error in open acceptor:" + er.what());
+    }
+
+    acceptor.set_option(asio::socket_base::reuse_address(true), er);
+    if(er){
+        throw std::runtime_error("error in open set option:" + er.what());
+    }
+
+    acceptor.bind(ip::tcp::endpoint{ip::make_address_v4(IP), PORT}, er);
+    if(er){
+        throw std::runtime_error("error in bind:" + er.what());
+    }
+
+    acceptor.listen(asio::socket_base::max_listen_connections, er);
+    if(er){
+        throw std::runtime_error("error in listen:" + er.what());
+    }
+
+
+}
+
+
+void Server::start_acceptor()
+{
+
+    auto sock = std::make_shared<ip::tcp::socket>(ioc);
+    auto self = shared_from_this();
+    acceptor.async_accept(*sock, [self, sock](boost::system::error_code er){
+        if(!er){
+            auto session = std::make_shared<Session>(*self, sock, self->ctx);
+            session->run();
+            self->start_acceptor();
+        }else{
+            throw std::runtime_error("error in accept: " + er.message());
+        }
+    });
+}
+
+void Server::start()
+{
+
+    load_server_certificate(ctx);
+    start_acceptor();
+
+    unsigned int threads = std::max(1u, std::thread::hardware_concurrency());
+    std::vector<std::thread> pool;
+    pool.reserve(threads);
+    auto self = shared_from_this();
+    for(int i = 0 ; i < threads; ++i){
+        pool.emplace_back([self]() -> void{
+            try {
+                self->ioc.run();
+            }
+            catch (std::exception ex) {
+                std::cerr << "error int start poll threads: " << std::endl;
+            }
+        });
+    }
+
+
+    for(auto& t : pool){
+        t.join();
+    }
+}
+
+
+void Server::load_server_certificate(asio::ssl::context& contx){
+    try {
+            contx.set_options(asio::ssl::context::default_workarounds |
+                asio::ssl::context::no_sslv2 |
+                asio::ssl::context::single_dh_use);
+            contx.use_certificate_chain_file("server.crt");
+            contx.use_private_key_file("server.key", asio::ssl::context::pem);
+    }
+    catch (std::exception ex) {
+        std::cout << "exception in load certificate" << std::endl;
+    }
+
+}
+</file>
+
+<file path="server.h">
+#ifndef Server_H
+#define Server_H
+#include "net.h"
+#include "mutex"
+#include "session.h"
+#include <forward_list>
+
+class Server : public std::enable_shared_from_this<Server>
+{
+
+    asio::io_context ioc;
+    ip::tcp::acceptor acceptor;
+    std::mutex mtx;
+    std::forward_list<std::shared_ptr<Session>> sessions;
+    ssl::context ctx;
+
+    void start_acceptor();
+
+public:
+    void start();
+    void load_server_certificate(asio::ssl::context& contx);
+    Server();
+};
+
+#endif // Server_H
+</file>
+
+<file path="session.cpp">
+#include "session.h"
+#include "server.h"
+#include "iostream"
+
+
+
+Session::Session(Server& server, std::shared_ptr<ip::tcp::socket> socket, asio::ssl::context& contx) :
+    server(server),
+    ssl_stream(std::move(*socket), contx),
+    buff(4096)
+{
+    stream_timer = std::make_shared<asio::steady_timer>(ssl_stream.get_executor());
+}
+
+void Session::run()
+{
+    auto self = shared_from_this();
+    ssl_stream.async_handshake(ssl::stream_base::server,
+                               [self](boost::system::error_code er){
+                                   if(!er){
+                                       self->do_read();
+                                   }else{
+                                       std::cerr << "error in handshake: " << er.what() << std::endl;
+                                   }
+                               });
+}
+
+void Session::do_read()
+{
+    req = {};
+    auto self = shared_from_this();
+    http::async_read(ssl_stream,
+                     buffer,
+                     req,
+                     [self](beast::error_code er, size_t bytes){
+                         boost::ignore_unused(bytes);
+                         if(!er){
+                            if(self->req.method() == http::verb::get && self->req.target() == "/music.mp3"){
+                                self->start_streaming();
+                            }else{
+                                self->handle_api();
+                            }
+                         }
+                         else if(er == http::error::end_of_stream){ self->do_close(); }
+                         else{
+                            std::cerr << "error in asyc read: " << er.what() << std::endl;
+                         }
+                     });
+}
+
+void Session::handle_api(){
+    json json_resp;
+    http::status status = http::status::ok;
+
+    if(req.target() == "api/status"){
+        json_resp = {{"status", "online"}, {"secure", true}};
+    }else{
+        status = http::status::not_found;
+        json_resp = {"status", "not found"};
+    }
+
+    auto resp = std::make_shared<http::response<http::string_body>>(status, req.version());
+    resp->set(http::field::server, "asio Igore-Corp Server");
+    resp->set(http::field::content_type, "application/json");
+    resp->keep_alive(req.keep_alive());
+    resp->body() = json_resp.dump();
+    resp->prepare_payload();
+
+    auto self = shared_from_this();
+
+    http::async_write(ssl_stream, *resp,
+                      [self, resp](beast::error_code er, size_t bytes){
+        if(!resp->keep_alive()){
+            self->do_close();
+        }else if(!er){
+            self->do_read();
+        }else if(er){
+            std::cerr << "error in handle write: " << er.what() << std::endl;
+        }
+    });
+
+}
+
+
+void Session::start_streaming(){
+    auto resp = std::make_shared<http::response<http::empty_body>>(http::status::ok, req.version());
+    resp->set(http::field::server, "Streaming server music.mp3");
+    resp->set(http::field::content_type, "audio/mpeg");
+    resp->chunked(true);
+
+    auto ser = std::make_shared<http::response_serializer<http::empty_body>>(*resp);
+
+    auto self = shared_from_this();
+    http::async_write_header(ssl_stream, *ser,
+                             [self, resp, ser](beast::error_code er, size_t bytes){
+        if(!er){
+            self->open_file_read();
+            self->stream_loop();
+        }else{
+            std::cerr << "error in start streaming: " << er.what() << std::endl;
+        }
+    });
+}
+
+void Session::stream_loop()
+{
+
+    int readed = read_file_chunk();
+
+    if(readed <= 0){
+        auto final_chunk = http::make_chunk_last();
+        auto self = shared_from_this();
+
+        asio::async_write(ssl_stream, final_chunk,
+                          [self](boost::system::error_code er, size_t bytes){
+            if(!er){
+                self->do_read();
+            }
+        });
+        return;
+    }
+
+
+
+    auto chunk_data = http::make_chunk(beast::net::buffer(buff, readed));
+    auto self = shared_from_this();
+
+
+
+    asio::async_write(ssl_stream, chunk_data,
+                       [self](beast::error_code err, size_t bytes){
+        if(!err){
+            self->stream_timer->expires_after(std::chrono::milliseconds(50));
+            self->stream_timer->async_wait([self](boost::system::error_code err1){
+                if(!err1){
+                    self->stream_loop();
+                }else{
+                    std::cerr << "error in async wait: " << err1.what() << std::endl;
+                }
+            });
+        }else{
+            std::cerr << "error in stream loop: " << err.what() << std::endl;
+        }
+    });
+
+}
+
+void Session::open_file_read()
+{
+    file_stream.open("music.mp3", std::ios::in | std::ios::binary);
+    if(!file_stream.is_open()){
+        std::cerr << "File Not Open "  << std::endl;
+    }
+}
+
+std::streamsize Session::read_file_chunk()
+{
+    if(file_stream.eof()){ return 0; }
+    file_stream.read(buff.data(), buff.size());
+    return file_stream.gcount();
+}
+
+void Session::do_close()
+{
+    auto self = shared_from_this();
+    ssl_stream.async_shutdown([self](beast::error_code er){
+        if(er == beast::net::error::eof){ er = {}; }
+        if(er){
+            std::cerr << "error in shutdown: " << er.what() << std::endl;
+        }
+    });
+}
+</file>
+
+<file path="session.h">
+#ifndef SESSION_H
+#define SESSION_H
+#include "net.h"
+#include "fstream"
+
+class Server;
+
+
+class Session : public std::enable_shared_from_this<Session>
+{
+    std::fstream file_stream;
+    Server& server;
+    asio::ssl::stream<tcp::socket> ssl_stream;
+    beast::flat_buffer buffer;
+    http::request<http::string_body> req;
+    std::vector<char> buff;
+    std::shared_ptr<asio::steady_timer> stream_timer;
+    void do_read();
+    void do_close();
+
+    void start_streaming();
+
+    void handle_api();
+
+    void stream_loop();
+
+    void open_file_read();
+    std::streamsize  read_file_chunk();
+
+public:
+    Session(Server& server, std::shared_ptr<ip::tcp::socket> socket, asio::ssl::context& contx);
+    void run();
+};
+
+#endif // SESSION_H
+</file>
+
+<file path="vcpkg.json">
+{
+  "name": "file-manager-server",
+  "version-string": "1.0.0",
+  "dependencies": [
+    "gtest",
+    "boost-asio",
+    "boost-beast",
+    "openssl",
+    "boost-uuid",
+    "nlohmann-json"
+  ]
+}
+</file>
+
+</files>

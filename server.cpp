@@ -41,6 +41,7 @@ void Server::start_acceptor()
     acceptor.async_accept(*sock, [self, sock](boost::system::error_code er){
         if(!er){
             auto session = std::make_shared<Session>(*self, sock, self->ctx);
+            session->run();
             self->start_acceptor();
         }else{
             throw std::runtime_error("error in accept: " + er.message());
@@ -54,13 +55,18 @@ void Server::start()
     load_server_certificate(ctx);
     start_acceptor();
 
-    int threads = std::max(1u, std::thread::hardware_concurrency());
+    unsigned int threads = std::max(1u, std::thread::hardware_concurrency());
     std::vector<std::thread> pool;
-    pool.resize(threads);
+    pool.reserve(threads);
     auto self = shared_from_this();
-    for(int i = 0 ; i < pool.size(); ++i){
-        pool.emplace_back([self](){
-            self->ioc.run();
+    for(int i = 0 ; i < threads; ++i){
+        pool.emplace_back([self]() -> void{
+            try {
+                self->ioc.run();
+            }
+            catch (std::exception ex) {
+                std::cerr << "error int start poll threads: " << std::endl;
+            }
         });
     }
 
@@ -72,9 +78,15 @@ void Server::start()
 
 
 void Server::load_server_certificate(asio::ssl::context& contx){
-    contx.set_options(asio::ssl::context::default_workarounds |
-                      asio::ssl::context::no_sslv2 |
-                      asio::ssl::context::single_dh_use);
-    contx.use_certificate_chain_file("server.crt");
-    contx.use_private_key_file("server.key", asio::ssl::context::pem);
+    try {
+            contx.set_options(asio::ssl::context::default_workarounds |
+                asio::ssl::context::no_sslv2 |
+                asio::ssl::context::single_dh_use);
+            contx.use_certificate_chain_file("server.crt");
+            contx.use_private_key_file("server.key", asio::ssl::context::pem);
+    }
+    catch (std::exception ex) {
+        std::cout << "exception in load certificate" << std::endl;
+    }
+
 }

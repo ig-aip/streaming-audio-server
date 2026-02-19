@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "C:/Users/igor.babich/streaming-audio-server/out/build/x64-Debug/CMakeFiles/file-manager-server-p2p.dir/embed.manifest"

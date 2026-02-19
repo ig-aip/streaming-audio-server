@@ -1,0 +1,9 @@
+# ninja log v6
+14	4061	7932043591726954	CMakeFiles/file-manager-server-p2p.dir/main.cpp.obj	f47ed9b40f430fc4
+7	4321	7932043591656952	CMakeFiles/file-manager-server-lib.dir/server.cpp.obj	71e628ea2fddcf87
+10	6758	7932043591696955	CMakeFiles/file-manager-server-lib.dir/session.cpp.obj	cb19730e338eefb3
+6759	6934	7932043659177597	file-manager-server-lib.lib	24b888338fa3977
+6934	8187	7932043660934472	file-manager-server-p2p.exe	1ba3f68f5cf25080
+35	7111	7932065129171626	CMakeFiles/file-manager-server-lib.dir/session.cpp.obj	cb19730e338eefb3
+7112	7288	7932065199937515	file-manager-server-lib.lib	24b888338fa3977
+7288	8248	7932065201707821	file-manager-server-p2p.exe	1ba3f68f5cf25080

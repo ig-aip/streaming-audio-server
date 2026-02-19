@@ -1,0 +1,69 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "file-manager-server-webRtcp",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "file-manager-server-lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-file-manager-server-lib-Debug-88718e85156a49061312.json",
+					"name" : "file-manager-server-lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "file-manager-server-p2p::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-file-manager-server-p2p-Debug-67419edcf4ec562e24c5.json",
+					"name" : "file-manager-server-p2p",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/igor.babich/streaming-audio-server/out/build/x64-Debug",
+		"source" : "C:/Users/igor.babich/streaming-audio-server"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

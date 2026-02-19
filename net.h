@@ -6,6 +6,7 @@
 #include "boost/asio/ssl.hpp"
 #include "boost/beast/ssl/ssl_stream.hpp"
 #include <nlohmann/json.hpp>
+#include <iostream>
 
 
 using json = nlohmann::json;

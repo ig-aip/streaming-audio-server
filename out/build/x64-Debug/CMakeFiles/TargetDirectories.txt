@@ -1,0 +1,4 @@
+C:/Users/igor.babich/streaming-audio-server/out/build/x64-Debug/CMakeFiles/file-manager-server-lib.dir
+C:/Users/igor.babich/streaming-audio-server/out/build/x64-Debug/CMakeFiles/file-manager-server-p2p.dir
+C:/Users/igor.babich/streaming-audio-server/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/igor.babich/streaming-audio-server/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
