@@ -41,7 +41,7 @@ void Session::do_read()
                                 self->handle_api();
                             }
                          }
-                         else if(er == http::error::end_of_stream){ self->do_close(); }
+                         else if(er == http::error::end_of_stream || er == asio::ssl::error::stream_truncated){ self->do_close(); }
                          else{
                             std::cerr << "error in asyc read: " << er.what() << std::endl;
                          }
