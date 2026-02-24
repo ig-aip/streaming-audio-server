@@ -2,6 +2,7 @@
 #define SESSION_H
 #include "net.h"
 #include "fstream"
+#include "boost/uuid.hpp"
 
 class Server;
 
@@ -26,6 +27,8 @@ class Session : public std::enable_shared_from_this<Session>
 
     void open_file_read();
     std::streamsize  read_file_chunk();
+
+    boost::uuids::uuid generate_uuid();
 
 public:
     Session(Server& server, std::shared_ptr<ip::tcp::socket> socket, asio::ssl::context& contx);

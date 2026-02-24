@@ -7,7 +7,7 @@
 #include "boost/beast/ssl/ssl_stream.hpp"
 #include <nlohmann/json.hpp>
 #include <iostream>
-
+#include "settings.h"
 
 using json = nlohmann::json;
 namespace asio = boost::asio;
@@ -18,8 +18,7 @@ namespace ssl = asio::ssl;
 using uuid = boost::uuids::uuid;
 using tcp = boost::asio::ip::tcp;
 
-const std::string IP = "127.0.0.1";
-const int PORT = 55555;
+
 
 
 #endif // NET_H

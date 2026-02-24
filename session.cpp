@@ -52,9 +52,18 @@ void Session::handle_api(){
     json json_resp;
     http::status status = http::status::ok;
 
-    if(req.target() == "/api/status"){
+    auto target = req.target();
+    auto method = req.method();
+
+    if(target == "/api/status" && method == http::verb::get){
         json_resp = {{"status", "online"}, {"secure", true}};
-    }else{
+    }
+
+    else if(method == http::verb::get && target == "/music.mp3"){
+
+    }
+
+    else{
         status = http::status::not_found;
         json_resp = {"status", "not found"};
     }
@@ -158,6 +167,12 @@ std::streamsize Session::read_file_chunk()
     if(file_stream.eof()){ return 0; }
     file_stream.read(buff.data(), buff.size());
     return file_stream.gcount();
+}
+
+boost::uuids::uuid Session::generate_uuid()
+{
+    boost::uuids::basic_random_generator<std::mt19937> gen;
+    return gen();
 }
 
 void Session::do_close()

@@ -7,6 +7,8 @@
     "boost-beast",
     "openssl",
     "boost-uuid",
-    "nlohmann-json"
+    "nlohmann-json",
+    "libpqxx",
+    "jwt-cpp"
   ]
 }
