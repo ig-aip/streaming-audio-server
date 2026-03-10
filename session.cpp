@@ -35,11 +35,7 @@ void Session::do_read()
                      [self](beast::error_code er, size_t bytes){
                          boost::ignore_unused(bytes);
                          if(!er){
-                            if(self->req.method() == http::verb::get && self->req.target() == "/music.mp3"){
-                                self->start_streaming();
-                            }else{
-                                self->handle_api();
-                            }
+                            self->handle_api();
                          }
                          else if(er == http::error::end_of_stream || er == asio::ssl::error::stream_truncated){ self->do_close(); }
                          else{
@@ -47,6 +43,17 @@ void Session::do_read()
                          }
                      });
 }
+
+inline void to_json(nlohmann::json& j, const music_file& m){
+    j = nlohmann::json{
+        {"id", m.id},
+        {"user_uuid", m.user_uuid},
+        {"title", m.title},
+        {"s3_path", m.s3_path},
+        {"is_public", m.is_public}
+    };
+}
+
 
 void Session::handle_api(){
     json json_resp;
@@ -57,15 +64,26 @@ void Session::handle_api(){
 
     if(target == "/api/status" && method == http::verb::get){
         json_resp = {{"status", "online"}, {"secure", true}};
+
+    }else if(method == http::verb::post && target == "/music/my"){
+        auto body = json::parse(req.body());
+        std::string access_token = body.value("access_token", "");
+        auto jwt = verify_jwt(access_token);
+        if(jwt.first){
+            std::vector<music_file> target_music = server.db.get_All_Users_Music(jwt.second);
+            json_resp = {{"music_list: ", target_music}};
+
+        }else{
+            std::cout << "expried: "  << std::endl;
+            status = http::status::unauthorized;
+            json_resp = {{"status", "expried or unaothorized"}};
+        }
+    }else if(method == http::verb::post && target == "/music/my/upload"){
+        auto body = json::parse(req.body());
     }
-
-    else if(method == http::verb::get && target == "/music.mp3"){
-
-    }
-
     else{
         status = http::status::not_found;
-        json_resp = {"status", "not found"};
+        json_resp = {{"status", "not found"}};
     }
 
     auto resp = std::make_shared<http::response<http::string_body>>(status, req.version());
@@ -74,6 +92,7 @@ void Session::handle_api(){
     resp->keep_alive(req.keep_alive());
     resp->body() = json_resp.dump();
     resp->prepare_payload();
+
 
     auto self = shared_from_this();
 
@@ -173,6 +192,34 @@ boost::uuids::uuid Session::generate_uuid()
 {
     boost::uuids::basic_random_generator<std::mt19937> gen;
     return gen();
+}
+
+std::pair<bool, std::string> Session::verify_jwt(const std::string &token)try
+{
+    auto verify = jwt::verify<jwt::traits::nlohmann_json>()
+        .allow_algorithm(jwt::algorithm::hs256{server.secret})
+        .with_issuer("auth-manager-server");
+
+    auto decode = jwt::decoded_jwt<jwt::traits::nlohmann_json>(token);
+    verify.verify(decode);
+
+    auto claim = decode.get_payload_claim("uuid");
+    std::cout << "claim: " << claim.as_string() << std::endl;
+
+    return std::pair<bool, std::string>{true, claim.as_string()};
+
+}catch(std::exception& ex){
+    std::cerr << "error in verify_jwt: " << ex.what()  <<"\n";
+    return std::pair<bool, std::string>{false, ""};
+}
+
+std::pair<bool, minio::s3::BucketExistsResponse> Session::check_bucket(const std::string &bucket)
+{
+    minio::s3::BucketExistsArgs args;
+    args.bucket = bucket;
+    minio::s3::BucketExistsResponse response = server.s3Client->BucketExists(args);
+    if(response.exist) { return std::pair<bool, minio::s3::BucketExistsResponse> {true, response}; }
+    else { return std::pair<bool, minio::s3::BucketExistsResponse> {false, response}; }
 }
 
 void Session::do_close()

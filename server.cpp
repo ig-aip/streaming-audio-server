@@ -5,7 +5,8 @@
 Server::Server()  :
     ioc(),
     acceptor(ioc),
-    ctx(ssl::context::tls_server)
+    ctx(ssl::context::tls_server),
+    secret(load_secret())
 {
     boost::system::error_code er;
     acceptor.open(ip::tcp::endpoint{ip::make_address_v4(IP), PORT}.protocol(), er);
@@ -30,8 +31,24 @@ Server::Server()  :
     }
 
 
+    s3CLientInit();
+
 }
 
+
+void Server::s3CLientInit() try
+{
+    minio::s3::BaseUrl baseUrl;
+
+    baseUrl.host = "127.0.0.1";
+    baseUrl.port = 9000;
+    baseUrl.https = true;
+
+    s3Provider = std::make_unique<minio::creds::StaticProvider>("minioadmin", "minioadmin");
+    s3Client = std::make_unique<minio::s3::Client>(baseUrl, s3Provider.get());
+}catch(std::exception& ex){
+    std::cerr <<"Error in s3Client Initialization: " << ex.what()  << "\n";
+}
 
 void Server::start_acceptor()
 {
@@ -48,6 +65,26 @@ void Server::start_acceptor()
         }
     });
 }
+
+std::string Server::load_secret()try
+{
+    std::ifstream secretFile("secret.txt", std::ios_base::binary);
+    if(!secretFile){
+        std::cerr << "secret not open \n";
+        return "";
+    }
+
+    std::string secretStr;
+    std::getline(secretFile, secretStr);
+    if(secretFile){ secretFile.close(); }
+
+    return secretStr;
+}catch(std::exception& ex){
+    std::cerr << "error in load secret: " <<ex.what() <<"\n";
+    return "";
+}
+
+
 
 void Server::start()
 {
@@ -85,7 +122,7 @@ void Server::load_server_certificate(asio::ssl::context& contx){
             contx.use_certificate_chain_file("server.crt");
             contx.use_private_key_file("server.key", asio::ssl::context::pem);
     }
-    catch (std::exception ex) {
+    catch (std::exception& ex) {
         std::cout << "exception in load certificate" << std::endl;
     }
 

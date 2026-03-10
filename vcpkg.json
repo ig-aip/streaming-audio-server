@@ -9,6 +9,7 @@
     "boost-uuid",
     "nlohmann-json",
     "libpqxx",
-    "jwt-cpp"
+    "jwt-cpp",
+    "minio-cpp"
   ]
 }

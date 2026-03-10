@@ -3,6 +3,9 @@
 #include "net.h"
 #include "fstream"
 #include "boost/uuid.hpp"
+#include "jwt-cpp/jwt.h"
+#include "jwt-cpp/traits/nlohmann-json/traits.h"
+
 
 class Server;
 
@@ -29,6 +32,10 @@ class Session : public std::enable_shared_from_this<Session>
     std::streamsize  read_file_chunk();
 
     boost::uuids::uuid generate_uuid();
+
+    std::pair<bool, std::string> verify_jwt(const std::string& token);
+
+    std::pair<bool, minio::s3::BucketExistsResponse> check_bucket(const std::string& bucket);
 
 public:
     Session(Server& server, std::shared_ptr<ip::tcp::socket> socket, asio::ssl::context& contx);

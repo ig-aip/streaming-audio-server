@@ -9,6 +9,12 @@
 #include <iostream>
 #include "settings.h"
 
+#include <miniocpp/client.h>
+#include <miniocpp/request.h>
+#include <miniocpp/credentials.h>
+#include <miniocpp/signer.h>
+
+
 using json = nlohmann::json;
 namespace asio = boost::asio;
 namespace beast = boost::beast;
