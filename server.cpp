@@ -79,12 +79,12 @@ void Server::create_bucket_ifnot_exists(const std::string& bucket)try
     std::cerr << "error in create bucket: " << ex.what()  <<"\n";
 }
 
-void Server::start_acceptor()
+void Server::start_acceptor()try
 {
-
+    std::cout << "starting" << std::endl;
     auto sock = std::make_shared<ip::tcp::socket>(ioc);
     auto self = shared_from_this();
-    std::cout << "starting";
+
     acceptor.async_accept(*sock, [self, sock](boost::system::error_code er){
         if(!er){
 
@@ -95,6 +95,8 @@ void Server::start_acceptor()
             throw std::runtime_error("error in accept: " + er.message());
         }
     });
+}catch(std::exception& ex){
+    std::cerr << "error in start acceptor: " << ex.what() << '\n';
 }
 
 std::string Server::load_secret()try
@@ -117,7 +119,7 @@ std::string Server::load_secret()try
 
 
 
-void Server::start()
+void Server::start()try
 {
 
     load_server_certificate(ctx);
@@ -143,6 +145,8 @@ void Server::start()
     for(auto& t : pool){
         t.join();
     }
+}catch(std::exception& ex){
+    std::cerr <<"error in start: " << ex.what() << '\n';
 }
 
 

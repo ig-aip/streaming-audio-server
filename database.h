@@ -15,16 +15,6 @@ struct music_file{
 
 };
 
-class Scoped_conn_pool{
-    ConnectionPool conn_pool;
-    std::shared_ptr<pqxx::connection> conn;
-
-public:
-    Scoped_conn_pool(const std::string& conn_str, size_t size);
-    std::shared_ptr<pqxx::connection> get();
-    void release(std::shared_ptr<pqxx::connection> old_con);
-    ~Scoped_conn_pool();
-};
 
 
 class Conn_guard{

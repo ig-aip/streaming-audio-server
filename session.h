@@ -34,11 +34,15 @@ class Session : public std::enable_shared_from_this<Session>
 
     boost::uuids::uuid generate_uuid();
 
+    void set_expried(http::status& status, nlohmann::json& json_resp);
+
     std::pair<bool, std::string> verify_jwt(const std::string& token);
 
     std::pair<bool, minio::s3::GetPresignedObjectUrlResponse> get_upload_link_s3(const std::string& title);
 
     std::pair<bool, minio::s3::StatObjectResponse> existObject(const std::string& title);
+
+    std::pair<bool,minio::s3::GetPresignedObjectUrlResponse> get_download_link_s3(const std::string& s3_path);
 
 public:
     Session(Server& server, std::shared_ptr<ip::tcp::socket> socket, asio::ssl::context& contx);

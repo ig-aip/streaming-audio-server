@@ -28,7 +28,7 @@ std::vector<music_file> DataBase::get_Public_Users_Music(const std::string& user
     std::vector<music_file> targetList;
     Conn_guard guard(conn_pool);
     pqxx::work work(*guard.get());
-    pqxx::result result = work.exec_params("SELECT id user_uuid, title, s3_path, is_public FROM music_files WHERE user_uuid = $1 AND is_public = TRUE", user_uuid);
+    pqxx::result result = work.exec_params("SELECT id, user_uuid, title, s3_path, is_public FROM music_files WHERE user_uuid = $1 AND is_public = TRUE", user_uuid);
 
     for(const auto& row : result){
         music_file target;
@@ -53,7 +53,7 @@ std::vector<music_file> DataBase::get_All_Users_Music(const std::string& user_uu
     std::vector<music_file> targetList;
     Conn_guard guard(conn_pool);
     pqxx::work work(*guard.get());
-    pqxx::result result = work.exec_params("SELECT id user_uuid, title, s3_path, is_public FROM music_files WHERE user_uuid = $1", user_uuid);
+    pqxx::result result = work.exec_params("SELECT id, user_uuid, title, s3_path, is_public FROM music_files WHERE user_uuid = $1", user_uuid);
 
     for(const auto& row : result){
         music_file target;
@@ -94,41 +94,15 @@ std::string DataBase::put_music(const std::string &user_uuid, const std::string 
 
 
 
-Scoped_conn_pool::Scoped_conn_pool(const std::string &conn_str, size_t size):
-    conn_pool(conn_str, size),
-    conn(nullptr)
-{
-
-}
-
-std::shared_ptr<pqxx::connection> Scoped_conn_pool::get()
-{
-    if(conn != nullptr){
-        conn_pool.release(conn);
-    }
-
-    conn = conn_pool.get();
-
-    return conn;
-}
-
-void Scoped_conn_pool::release(std::shared_ptr<pqxx::connection> old_con)
-{
-    if(conn != nullptr){
-        conn_pool.release(conn);
-        conn = nullptr;
-    }
-}
-
-Scoped_conn_pool::~Scoped_conn_pool()
-{
-    release(conn);
-}
-
 Conn_guard::Conn_guard(ConnectionPool &pool_) : pool(pool_), conn(pool.get())
 {
 }
 
 Conn_guard::~Conn_guard(){
     pool.release(conn);
+}
+
+std::shared_ptr<pqxx::connection> Conn_guard::get()
+{
+    return conn;
 }
