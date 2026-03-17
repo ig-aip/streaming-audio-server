@@ -9,6 +9,7 @@ std::shared_ptr<pqxx::connection> ConnectionPool::get()try
     }
 
     auto conn = pool.front();
+    pool.pop();
     if(!conn->is_open()){
         conn = std::make_shared<pqxx::connection>(conn_str);
     }
@@ -27,7 +28,7 @@ ConnectionPool::ConnectionPool(const std::string &conn_str_, const size_t size_)
         }
     }
 }catch(std::exception& ex){
-    std::cerr << "Error in start connection pool: " << ex.what() << "\n";
+    std::cerr << "Error in start connection pool: " << ex.what() << " conn_str: " << conn_str_ <<" \n";
 }
 
 

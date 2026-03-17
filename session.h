@@ -19,6 +19,7 @@ class Session : public std::enable_shared_from_this<Session>
     http::request<http::string_body> req;
     std::vector<char> buff;
     std::shared_ptr<asio::steady_timer> stream_timer;
+    std::string music_bucket;
     void do_read();
     void do_close();
 
@@ -35,7 +36,9 @@ class Session : public std::enable_shared_from_this<Session>
 
     std::pair<bool, std::string> verify_jwt(const std::string& token);
 
-    std::pair<bool, minio::s3::BucketExistsResponse> check_bucket(const std::string& bucket);
+    std::pair<bool, minio::s3::GetPresignedObjectUrlResponse> get_upload_link_s3(const std::string& title);
+
+    std::pair<bool, minio::s3::StatObjectResponse> existObject(const std::string& title);
 
 public:
     Session(Server& server, std::shared_ptr<ip::tcp::socket> socket, asio::ssl::context& contx);

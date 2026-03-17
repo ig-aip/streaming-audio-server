@@ -7,7 +7,8 @@
 Session::Session(Server& server, std::shared_ptr<ip::tcp::socket> socket, asio::ssl::context& contx) :
     server(server),
     ssl_stream(std::move(*socket), contx),
-    buff(4096)
+    buff(4096),
+    music_bucket(server.music_bucket)
 {
     stream_timer = std::make_shared<asio::steady_timer>(ssl_stream.get_executor());
 }
@@ -65,6 +66,13 @@ void Session::handle_api(){
     if(target == "/api/status" && method == http::verb::get){
         json_resp = {{"status", "online"}, {"secure", true}};
 
+    }else if(method == http::verb::post && target == "/music/my/play"){
+        auto body = json::parse(req.body());
+        std::string access_token = body.value("access_token", "");
+        auto jwt = verify_jwt(access_token);
+        if(jwt.first){
+
+        }
     }else if(method == http::verb::post && target == "/music/my"){
         auto body = json::parse(req.body());
         std::string access_token = body.value("access_token", "");
@@ -72,7 +80,6 @@ void Session::handle_api(){
         if(jwt.first){
             std::vector<music_file> target_music = server.db.get_All_Users_Music(jwt.second);
             json_resp = {{"music_list: ", target_music}};
-
         }else{
             std::cout << "expried: "  << std::endl;
             status = http::status::unauthorized;
@@ -80,6 +87,49 @@ void Session::handle_api(){
         }
     }else if(method == http::verb::post && target == "/music/my/upload"){
         auto body = json::parse(req.body());
+        std::string title = body.value("title", "");
+        bool is_public = body.value("is_public", true);
+        std::string access_token = body.value("access_token", "");
+        auto jwt = verify_jwt(access_token);
+        std::cout << "IS ACCEPT : " << jwt.first << " ACCESS_TOKEN: " << access_token  << "\n\n"<< std::endl;
+        if(jwt.first){
+            auto upload_link = get_upload_link_s3(title);
+            if(upload_link.first){
+                json_resp = {{"url", upload_link.second.url}};
+            }else{
+                std::cout << "ERROR URL" << std::endl;
+                json_resp = {{"url", "ERROR"}};
+            }
+        }else{
+            std::cout << "expired: " <<std::endl;
+            status = http::status::unauthorized;
+            json_resp = {{"status", "expried or unaothorized"}};
+        }
+    }else if(method == http::verb::post && target == "/music/my/upload/confirm"){
+        auto body = json::parse(req.body());
+        std::string access_token = body.value("access_token", "");
+        auto jwt = verify_jwt(access_token);
+        std::cout << "IS ACCEPT : " << jwt.first << " ACCESS_TOKEN: " << access_token  << "\n\n"<< std::endl;
+
+        if(jwt.first){
+            unsigned int status_code = body.value("status_code", 0);
+            if(status_code == 0){
+                json_resp = {{"status", "reply"}};
+            }else{
+                std::string title = body.value("title", "");
+                bool is_public = body.value("is_public", true);
+                auto confirm = existObject(title);
+                if(confirm.first){
+                    server.db.put_music(jwt.second, title, title, is_public);
+                    json_resp = {{"status", true}};
+                }else{
+                    json_resp = {{"file not exist", title}};
+                }
+            }
+        }else{
+            status = http::status::unauthorized;
+            json_resp = {{"status", "unauthorized"}};
+        }
     }
     else{
         status = http::status::not_found;
@@ -213,13 +263,49 @@ std::pair<bool, std::string> Session::verify_jwt(const std::string &token)try
     return std::pair<bool, std::string>{false, ""};
 }
 
-std::pair<bool, minio::s3::BucketExistsResponse> Session::check_bucket(const std::string &bucket)
+
+
+std::pair<bool, minio::s3::GetPresignedObjectUrlResponse> Session::get_upload_link_s3(const std::string& title)try
 {
-    minio::s3::BucketExistsArgs args;
-    args.bucket = bucket;
-    minio::s3::BucketExistsResponse response = server.s3Client->BucketExists(args);
-    if(response.exist) { return std::pair<bool, minio::s3::BucketExistsResponse> {true, response}; }
-    else { return std::pair<bool, minio::s3::BucketExistsResponse> {false, response}; }
+    minio::s3::GetPresignedObjectUrlArgs args;
+    args.method = minio::http::Method::kPut;
+    args.bucket = music_bucket;
+    args.object = title;
+    args.expiry_seconds = 360;
+
+    if(!server.check_bucket(music_bucket).first){
+        std::cerr << "Error in get upload link s3: bucket " << music_bucket << " is not exists\n";
+        return std::pair<bool, minio::s3::GetPresignedObjectUrlResponse> {false, ("none")};
+    }
+
+    minio::s3::GetPresignedObjectUrlResponse resp = server.s3Client->GetPresignedObjectUrl(args);
+    if(!resp){
+        return std::pair<bool, minio::s3::GetPresignedObjectUrlResponse> {false, resp};
+    }else {
+        std::cout << "presigned url to upload: "  << resp.url << " object: "  << args.object << " end" << std::endl;
+        return std::pair<bool, minio::s3::GetPresignedObjectUrlResponse> {true, resp};
+    }
+}catch(std::exception& ex){
+    std::cerr << "error in verify_jwt: " << ex.what()  <<"\n";
+    return std::pair<bool, minio::s3::GetPresignedObjectUrlResponse> {false, ("none")};
+}
+
+std::pair<bool, minio::s3::StatObjectResponse> Session::existObject(const std::string &title)try
+{
+    std::string objectName = title;
+    minio::s3::StatObjectArgs args;
+    args.bucket = music_bucket;
+    args.object = objectName;
+    auto resp = server.s3Client->StatObject(args);
+    if(!resp){
+        return std::pair<bool, minio::s3::StatObjectResponse> {false, resp};
+    }
+
+    std::cout << "exist Object: " << resp.object_name << std::endl;
+    return std::pair<bool, minio::s3::StatObjectResponse> {true, resp};
+}catch(std::exception& ex){
+    std::cerr << "error in exist objects: " << ex.what()  <<"\n";
+    return std::pair<bool, minio::s3::StatObjectResponse> {false, {}};;
 }
 
 void Session::do_close()

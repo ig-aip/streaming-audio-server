@@ -27,9 +27,22 @@ public:
 };
 
 
+class Conn_guard{
+    ConnectionPool& pool;
+    std::shared_ptr<pqxx::connection> conn;
+public:
+    Conn_guard(ConnectionPool& pool_);
+    ~Conn_guard();
+
+    std::shared_ptr<pqxx::connection> get();
+
+};
+
+
+
 class DataBase
 {
-    Scoped_conn_pool conn_pool;
+    ConnectionPool conn_pool;
     std::string conn_str;
     std::string getConnStrFromFile(const std::string fileName);
 

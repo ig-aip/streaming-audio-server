@@ -42,7 +42,7 @@ void Server::s3CLientInit() try
 
     baseUrl.host = "127.0.0.1";
     baseUrl.port = 9000;
-    baseUrl.https = true;
+    baseUrl.https = false;
 
     s3Provider = std::make_unique<minio::creds::StaticProvider>("minioadmin", "minioadmin");
     s3Client = std::make_unique<minio::s3::Client>(baseUrl, s3Provider.get());
@@ -50,13 +50,44 @@ void Server::s3CLientInit() try
     std::cerr <<"Error in s3Client Initialization: " << ex.what()  << "\n";
 }
 
+std::pair<bool, minio::s3::BucketExistsResponse> Server::check_bucket(const std::string &bucket)
+{
+    minio::s3::BucketExistsArgs args;
+    args.bucket = bucket;
+    minio::s3::BucketExistsResponse response = s3Client->BucketExists(args);
+    if(response.exist) { return std::pair<bool, minio::s3::BucketExistsResponse> {true, response}; }
+    else { return std::pair<bool, minio::s3::BucketExistsResponse> {false, response}; }
+}
+
+void Server::create_bucket_ifnot_exists(const std::string& bucket)try
+{
+    if(check_bucket(bucket).first){
+        return;
+    }
+    minio::s3::MakeBucketArgs args;
+    args.bucket = bucket;
+
+    minio::s3::MakeBucketResponse resp = s3Client->MakeBucket(args);
+    if(!resp){
+        std::cout << "bucket: " << resp.Error() << " cancelled" <<std::endl;;
+        return;
+    }else{
+        std::cout << "bucket: " << bucket << " created" <<std::endl;;
+    }
+    return;
+}catch(std::exception& ex){
+    std::cerr << "error in create bucket: " << ex.what()  <<"\n";
+}
+
 void Server::start_acceptor()
 {
 
     auto sock = std::make_shared<ip::tcp::socket>(ioc);
     auto self = shared_from_this();
+    std::cout << "starting";
     acceptor.async_accept(*sock, [self, sock](boost::system::error_code er){
         if(!er){
+
             auto session = std::make_shared<Session>(*self, sock, self->ctx);
             session->run();
             self->start_acceptor();
@@ -90,6 +121,7 @@ void Server::start()
 {
 
     load_server_certificate(ctx);
+    create_bucket_ifnot_exists(music_bucket);
     start_acceptor();
 
     unsigned int threads = std::max(1u, std::thread::hardware_concurrency());
