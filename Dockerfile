@@ -16,6 +16,6 @@ FROM ubuntu:22.04
 RUN apt-get update && apt-get install -y libssl-dev libpq5 && rm -rf /var/lib/apt/lists/*
 WORKDIR /app
 # Копируем бинарник из builder
-COPY --from=builder /app/build/file-manager-server /app/
+COPY --from=builder /app/build/streaming-audio-server /app/
 # (Для Auth Server вместо file-manager-server напишите auth-manager-server)
-CMD ["./file-manager-server"]
+CMD ["./streaming-audio-server"]
