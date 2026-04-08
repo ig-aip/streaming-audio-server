@@ -40,11 +40,11 @@ void Server::s3CLientInit() try
 {
     minio::s3::BaseUrl baseUrl;
 
-    baseUrl.host = "127.0.0.1";
-    baseUrl.port = 9000;
+    baseUrl.host = MINIO_IP;
+    baseUrl.port = MINIO_PORT;
     baseUrl.https = false;
 
-    s3Provider = std::make_unique<minio::creds::StaticProvider>("minioadmin", "minioadmin");
+    s3Provider = std::make_unique<minio::creds::StaticProvider>("admin", "kotik123123Q");
     s3Client = std::make_unique<minio::s3::Client>(baseUrl, s3Provider.get());
 }catch(std::exception& ex){
     std::cerr <<"Error in s3Client Initialization: " << ex.what()  << "\n";
@@ -69,10 +69,10 @@ void Server::create_bucket_ifnot_exists(const std::string& bucket)try
 
     minio::s3::MakeBucketResponse resp = s3Client->MakeBucket(args);
     if(!resp){
-        std::cout << "bucket: " << resp.Error() << " cancelled" <<std::endl;;
+        std::cout << "bucket err: " << resp.Error() << " cancelled" <<std::endl;;
         return;
     }else{
-        std::cout << "bucket: " << bucket << " created" <<std::endl;;
+        std::cout << "bucket make: " << bucket << " created" <<std::endl;;
     }
     return;
 }catch(std::exception& ex){
@@ -135,7 +135,7 @@ void Server::start()try
             try {
                 self->ioc.run();
             }
-            catch (std::exception ex) {
+            catch (std::exception& ex) {
                 std::cerr << "error int start poll threads: " << std::endl;
             }
         });

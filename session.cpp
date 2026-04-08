@@ -51,12 +51,14 @@ inline void to_json(nlohmann::json& j, const music_file& m){
         {"user_uuid", m.user_uuid},
         {"title", m.title},
         {"s3_path", m.s3_path},
-        {"is_public", m.is_public}
+        {"is_public", m.is_public},
+        {"is_liked", m.is_liked},
+        {"username", m.username}
     };
 }
 
 
-void Session::handle_api(){
+void Session::handle_api()try{
     json json_resp;
     http::status status = http::status::ok;
 
@@ -82,8 +84,10 @@ void Session::handle_api(){
             set_expried(status, json_resp);
         }
     }else if(method == http::verb::post && target == "/music/my"){
+
         auto body = json::parse(req.body());
         std::string access_token = body.value("access_token", "");
+        std::cout << "MY: " << body.value("device_name", "");
         auto jwt = verify_jwt(access_token);
         if(jwt.first){
             std::vector<music_file> target_music = server.db.get_All_Users_Music(jwt.second);
@@ -133,7 +137,94 @@ void Session::handle_api(){
         }else{
             set_expried(status, json_resp);
         }
+    }else if(method == http::verb::post && target == "/music/my/liked"){
+        auto body = json::parse(req.body());
+        auto access_token = body.value("access_token", "");
+        auto jwt = verify_jwt(access_token);
+
+        if(jwt.first){
+            std::vector<music_file> target_music = server.db.get_liked_music(jwt.second);
+            json_resp = {{"music_list", target_music}};
+        }else{
+            set_expried(status, json_resp);
+        }
+    }else if(method == http::verb::post && target == "/music/my/like"){
+        auto body = json::parse(req.body());
+        auto access_token = body.value("access_token", "");
+        auto jwt = verify_jwt(access_token);
+
+
+        if(jwt.first){
+            auto music_id = body.value("music_id", "");
+            json_resp = {{"is_liked", server.db.like_music(jwt.second, music_id)}};
+            std::cout << "IS LIKED: " << json_resp << std::endl;
+        }else{
+            set_expried(status, json_resp);
+        }
+    }else if(method == http::verb::post && target == "/music/my/unlike"){
+        auto body = json::parse(req.body());
+        auto access_token = body.value("access_token", "");
+        auto jwt = verify_jwt(access_token);
+
+
+        if(jwt.first){
+            auto music_id = body.value("music_id", "");
+            json_resp = {{"is_liked", server.db.unlike_music(jwt.second, music_id)}};
+            std::cout << "IS LIKED(UN): " << json_resp << std::endl;
+        }else{
+            set_expried(status, json_resp);
+        }
+    }else if(method == http::verb::post && target == "/music/my/listen"){
+        auto body = json::parse(req.body());
+        auto access_token = body.value("access_token","");
+        auto jwt = verify_jwt(access_token);
+
+        if(jwt.first){
+            auto music_id = body.value("music_id", "");
+            json_resp = {{"is_listnes", server.db.increment_listens(music_id)}};
+        }else {
+            set_expried(status, json_resp);
+        }
+    }else if(method == http::verb::post && target == "/music/popular"){
+        auto body = json::parse(req.body());
+        auto access_token = body.value("access_token","");
+        auto jwt = verify_jwt(access_token);
+
+        if(jwt.first){
+            json_resp = {{"music_list", server.db.get_Public_Users_Music(jwt.second)}};
+        }else {
+            set_expried(status, json_resp);
+        }
+    }else if(method == http::verb::post && target == "/music/search"){
+        auto body = json::parse(req.body());
+        auto access_token = body.value("access_token", "");
+        auto query = body.value("query", "");
+        auto jwt = verify_jwt(access_token);
+
+        if(jwt.first){
+            std::vector<music_file> target_music = server.db.search_music(query, jwt.second);
+            json_resp = {{"music_list", target_music}};
+            std::cout << "MUSIC: " << json_resp << std::endl;
+            status = http::status::ok;
+        }else {
+            set_expried(status, json_resp);
+        }
+    }else if(method == http::verb::post && target == "/music/my/stats"){
+        auto body = json::parse(req.body());
+        std::string access_token = body.value("access_token", "");
+        auto jwt = verify_jwt(access_token);
+
+        if(jwt.first){
+            auto stats = server.db.get_user_stats(jwt.second);
+            json_resp = {
+                {"uploads_count", stats.first},
+                {"liked_count", stats.second}
+            };
+        }else{
+            set_expried(status, json_resp);
+        }
     }
+
     else{
         status = http::status::not_found;
         json_resp = {{"status", "not found"}};
@@ -160,6 +251,9 @@ void Session::handle_api(){
         }
     });
 
+}catch(std::exception& ex){
+    std::cerr << "error in handle_api: " << ex.what() << '\n';
+    do_close();
 }
 
 

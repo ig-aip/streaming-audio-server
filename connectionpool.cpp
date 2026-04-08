@@ -34,12 +34,14 @@ ConnectionPool::ConnectionPool(const std::string &conn_str_, const size_t size_)
 
 void ConnectionPool::release(std::shared_ptr<pqxx::connection> oldConn)try
 {
-    if(oldConn->is_open()){
-        pqxx::work work(*oldConn);
-        work.exec("ROLLBACK");
-        work.commit();
-    }else{
-        oldConn = std::make_shared<pqxx::connection>(conn_str);
+    if(oldConn){
+        if(oldConn->is_open()){
+            pqxx::work work(*oldConn);
+            work.exec("ROLLBACK");
+            work.commit();
+        }else{
+            oldConn = std::make_shared<pqxx::connection>(conn_str);
+        }
     }
 
     std::unique_lock<std::mutex> lock (mutex);
